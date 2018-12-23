@@ -1,0 +1,90 @@
+<!-- 个人中心页面 -->
+<!-- 
+    user:个人中心页面
+    header:用户头像
+    user_info:用户详情
+    nickName:用户昵称
+    dream_userInfo:梦想互助参与详情
+    user_title:个人中心标题
+    plate:个人中心板块
+    module:功能模块
+ -->
+<view class='user'>
+    <view class='header'>
+        <image src='http://tdream.antit.top/image/avatar.png'></image>
+    </view>
+    <view class='user_info'>
+        <view class='message'>
+            <view class='nickName'>Lisa</view>
+            <view class='dream_poolInfo'>
+                <view class='left'>
+                    <view class='num'>0</view>
+                    <view class='tip'>参与中的池</view>
+                </view>
+                <view class='line'></view>
+                <view class='middle'>
+                    <view class='num'>10</view>
+                    <view class='tip'>获得互助总金额</view>
+                </view>
+                <view class='line'></view>
+                <view class='right'>
+                    <view class='num'>0</view>
+                    <view class='tip'>今日参与份数</view>
+                </view>
+            </view>   
+        </view>
+    </view>
+    <view class='plate'>
+        <view class='user_title'><text></text>个人中心</view>
+        <view class='module'>
+            <view class='block'>
+                <view class='block_main' bindtap='dream_help'>
+                    <view class='icon_join icon'></view>
+                    <text>我的参与</text>
+                </view>
+            </view>
+            <view class='block'>
+                <view class='block_main'>
+                    <view class='icon_notice icon'></view>
+                    <text>系统通知</text>
+                </view>
+            </view>
+            <view class='block line'>
+                <view class='block_main'>
+                    <view class='icon_phone icon'></view>
+                    <text>手机号管理</text>
+                </view>
+            </view>
+            <view class='block'>
+                <view class='block_main'>
+                    <view class='icon_name icon'></view>
+                    <text>实名认证</text>
+                </view>
+            </view>
+            <view class='block'>
+                <view class='block_main'>
+                    <view class='icon_service icon'></view>
+                    <text>梦想服务</text>
+                </view>
+            </view>
+            <view class='block line'>
+                <view class='block_main'>
+                    <view class='icon_cach icon'></view>
+                    <text>联系客服</text>
+                </view>
+            </view>
+            <view class='block bottom'>
+                <view class='block_main'>
+                    <view class='icon_feed icon'></view>
+                    <text>用户反馈</text>
+                </view>
+            </view>
+            <view class='block bottom'>
+                <view class='block_main'>
+                    <view class='icon_question icon'></view>
+                    <text>常见问题</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,21 +1,317 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/**首页样式表**/
+/* banner--样式处理 */
+.home{
+    width: 100%;
+    height: auto;
+    border-top: 2rpx solid #cccac9;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.home .home_content{
+    width: 680rpx;
+    margin: 20rpx auto 0;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.home .home_content .banner{
+    width: 100%;
+    height: 188rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.home .home_content .banner image{
+    width: 100%;
+    height: 100%;
+}
+/* 参与互助提示信息--样式处理 */
+.home .home_content .participate_tip{
+    width: 100%;
+    height: 68rpx;
+    margin-top: 20rpx;
+    border-radius: 10rpx;
+    box-shadow: 2rpx 0rpx 10rpx 2rpx rgba(0, 54, 208, .1),-2rpx 0 10rpx 2rpx rgba(0, 54, 208, .1),0 2rpx 10rpx 2rpx rgba(0, 54, 208, .1),0 -2rpx 10rpx 2rpx rgba(0, 54, 208, .1);
+}
+.home .home_content .participate_tip .tip_main{
+    width: 640rpx;
+    margin: 0 auto;
+    height: 68rpx;
+    line-height: 68rpx;
+}
+.home .home_content .participate_tip .tip_main .tip_left{
+    float: left;
+    height: 100%;
+}
+.home .home_content .participate_tip .tip_main image{
+    margin-right: 10rpx;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.home .home_content .participate_tip .tip_main .username{
+    font-size: 26rpx;
+}
+.home .home_content .participate_tip .tip_main .tip_right{
+    float: right;
+    height: 100%;
+}
+.home .home_content .participate_tip .tip_main .tip_right .tip_message{
+    font-size: 26rpx;
+}
+/* 梦想互助池--样式处理 */
+.home .home_content .dream_info{
+    width: 100%;
+    margin-top: 20rpx;
+    border-radius: 10rpx;
+    box-shadow: 2rpx 0rpx 10rpx 2rpx rgba(0, 54, 208, .1),-2rpx 0 10rpx 2rpx rgba(0, 54, 208, .1),0 2rpx 10rpx 2rpx rgba(0, 54, 208, .1),0 -2rpx 10rpx 2rpx rgba(0, 54, 208, .1);
+    height: 770rpx;
+    text-align: center;
+}
+.home .home_content .dream_info .dream_title{
+    margin-left: 30rpx;
+    padding-top: 30rpx;
+    font-size: 32rpx;
+    text-align: left;
+}
+.home .home_content .dream_info .progress{
+    margin-top: 50rpx;
+    margin-left: 150rpx;
+    width: 380rpx;
+    height:380rpx;
+    position: relative;
+}
+.home .home_content .dream_info .progress .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home .home_content .dream_info .progress .timeout{
+    position: absolute;
+    top: 105rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.home .home_content .dream_info .progress .timeout .icon_clock{
+    width: 23rpx;
+    height:23rpx;
+    background: url(http://tdream.antit.top/image/clock.png) no-repeat;
+    background-size: 23rpx 23rpx;
+    margin-right: 10rpx;
+    display: inline-block;
+}
+.home .home_content .dream_info .progress .timeout .timeout_ui{
+    font-size: 28rpx;
+    color: #00d094;
+    display: inline-block;
+}
+.home .home_content .dream_info .progress .help_money{
+    position: absolute;
+    top: 150rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 65rpx;
+    color: #ffc057;
+}
+.home .home_content .dream_info .progress .present_money{
+    position: absolute;
+    bottom: 100rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24rpx;
+    color: #999;
+}
+.home .home_content .dream_info .targetAndPrice{
+    width: 600rpx;
+    margin: 0 auto;
+}
+.home .home_content .dream_info .targetAndPrice .target{
+    float: left;
+}
+.home .home_content .dream_info .targetAndPrice .target .target_money,.home .home_content .dream_info .targetAndPrice .price .price_money{
+    font-size: 38rpx;
+    color: #ffc057;
+    margin-bottom: 10rpx;
+    display: block;
+    text-align: center;
+}
+.home .home_content .dream_info .targetAndPrice .target .target_tip,.home .home_content .dream_info .targetAndPrice .price .price_tip{
+    font-size: 24rpx;
+    color: #999;
+    display: block;
+}
+.home .home_content .dream_info .targetAndPrice .price{
+    float: right;
+}
+/* 参与互助--样式处理 */
+.home .home_content .dream_info .join_help::after{
+    border:none;
+}
+.home .home_content .dream_info .join_help{
+    width: 600rpx;
+    margin: 0 auto 0;
+    position: relative;
+    top: 34rpx;
+    height: 78rpx;
+    line-height: 78rpx;
+    background-color: #00d094;
+    border-radius: 39rpx;
+    font-size: 42rpx;
+    color: #fff; 
+}
+.home .home_content .dream_info .tip_msg{
+    font-size: 20rpx;
+    color: #999;
+    position: relative;
+    top: 25rpx;
+}
+.home .home_content .issue{
+    float: right;
+    font-size: 30rpx;
+    color:#595959;
+    text-decoration: underline;
+    margin-top: 25rpx;
+}
+/* 互助规则--样式处理 */
+.home .home_content .rules{
+    width: 630rpx;
+    margin: 0 auto;
+    position: relative;
+    top: 80rpx;
+}
+.home .home_content .rules .rules_title{
+    width: 100%;
+    font-size: 32rpx;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.home .home_content .rules .rules_title text{
+    float: left;
+    margin-left: 26rpx;
+    color: #00d094;
+}
+.home .home_content .rules .rules_title .circle{
+    width: 10rpx;
+    height: 10rpx;
+    background-color: #00d094;
+    border-radius: 50%;
+    position: absolute;
+}
+.home .home_content .rules .rules_title .circle.left{
+    left: 176rpx;
+    top: 18rpx
+}
+.home .home_content .rules .rules_title .circle.right{
+    right: 176rpx;
+    top: 18rpx;
+}
+.home .home_content .rules .rules_title .line{
+    width: 176rpx;
+    height: 2rpx;
+    position: relative;
+    top: 22rpx;
+}
+.home .home_content .rules .rules_title .line.left{
+    float: left;
+    background: linear-gradient(to right, white , #00d094);
+}
+.home .home_content .rules .rules_title .line.right{
+    float:right;
+    background: linear-gradient(to right, #00d094 , white);
+}
+/* 规则--样式处理 */
+.home .home_content .steps{
+    position: relative;
+    top: 60rpx;
+    height: 93rpx;
+    margin: 0 auto;
+}
+.home .home_content .steps view.step{
+    float: left;
+    text-align: center;
+}
+.home .home_content .steps view.step .icon{
+    width: 38rpx;
+    height: 38rpx;
+    border-radius: 50%;
+    background-size: 38rpx 38rpx;
+    margin: 0 auto;
+}
+.home .home_content .steps view.icon_one{
+    background-image: url(http://tdream.antit.top/image/active_index1.png);
+}
+.home .home_content .steps view.icon_two{
+    background-image: url(http://tdream.antit.top/image/avtive_index2.png);
+}
+.home .home_content .steps view.icon_three{
+    background-image: url(http://tdream.antit.top/image/avtive_index3.png);
+}
+.home .home_content .steps view.icon_four{
+    background-image: url(http://tdream.antit.top/image/active_index4.png);
+}
+.home .home_content .steps view.step:last-child{
+    float: right;
+}
+.home .home_content .steps .line{
+    width: 70rpx;
+    height: 2rpx;
+    float: left;
+    background: #edf0f5;
+    position: relative;
+    top: 19rpx; 
+}
+.home .home_content .steps .step .step_text{
+   margin-top: 20rpx;
+   text-align: center;
+   font-size: 26rpx;
+   color: #595959;
+}
+.home .home_content .rules_info{
+    width: 100%;
+    height: 382rpx;
+    background-color: #fafbfc;
+    border-radius: 20rpx;
+    margin-top: 90rpx;
+}
+.home .home_content .rules_info .info_msg{
+    margin-left: 20rpx;
+    padding-top: 40rpx;
+}
+.home .home_content .rules_info .info_msg .rules_box{
+    margin-bottom: 24rpx;
+    width: 100%;
+}
+.home .home_content .rules_info .info_msg view view{
+    width: 36rpx;
+    height: 36rpx;
+    background-repeat: no-repeat;
+    background-size: 36rpx 36rpx;
+    border-radius: 50%; 
+    margin-right: 30rpx;
+    display: inline-block;
+    vertical-align: middle;
+}
+.home .home_content .rules_info .info_msg text{
+    font-size: 24rpx;
+    color: #595959;
+}
+.home .home_content .rules_info .info_msg view view.icon_indexOne{
+    background-image: url(http://tdream.antit.top/image/index1.png)
+}
+.home .home_content .rules_info .info_msg view view.icon_indexTwo{
+    background-image: url(http://tdream.antit.top/image/index2.png)
+}
+.home .home_content .rules_info .info_msg view view.icon_indexThree{
+    background-image: url(http://tdream.antit.top/image/index3.png)
+}
+.home .home_content .rules_info .info_msg view view.icon_indexFour{
+    background-image: url(http://tdream.antit.top/image/index4.png)
+}
+.home .home_content .rules_info .info_msg .rules_box:nth-child(5){
+    text-align: center;
+    font-size: 42rpx;
+    margin-top: 30rpx;
+    line-height: 36rpx;
+}
+.home .home_content .rules_info .info_msg .rules_box:nth-child(5) text{
+    text-decoration: underline;
+}
+.footer{
+    width: 100%;
+    height: 50rpx;
+    background-color: #fff;
 }

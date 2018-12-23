@@ -1,54 +1,67 @@
-//index.js
+//参与互助逻辑处理
 //获取应用实例
 const app = getApp()
+var ctx = wx.createCanvasContext('top');
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+      money:100,
+      price:5,
+      remaining:20,
+      obtainMoney:'80',
+      jindu:''
+  },
+  //绘制进度条
+  drawCircle(jindu){
+      var jindu = jindu * 2;
+      if(jindu == 0){
+        ctx.clearRect(0,0,190,190);
+        return;
+      }
+      ctx.setFillStyle('white');
+      ctx.clearRect(0,0,190,190);
+      ctx.setLineWidth(15);
+      ctx.setStrokeStyle('#ffc057');
+      ctx.setLineCap('round');
+      ctx.beginPath();
+      ctx.arc(95, 95, 80, Math.PI/-2, jindu * Math.PI - Math.PI / 2, false);
+      ctx.stroke()
+      ctx.draw()
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  onReady(){
+      var cxt_arc = wx.createCanvasContext('bottom');
+      cxt_arc.setLineWidth(15);
+      cxt_arc.setStrokeStyle('#edf0f5');
+      cxt_arc.setLineCap('round');
+      cxt_arc.beginPath();
+      cxt_arc.arc(95, 95, 80, 0, 2 * Math.PI, false);
+      cxt_arc.stroke();
+      cxt_arc.draw();
+  },
+  lucky: function () {
+      wx.navigateTo({
+          url: '/pages/lucky/lucky',
+      })
+  },
+  rules: function () {
+      wx.navigateTo({
+          url: '/pages/rules/rules',
+      })
   },
   onLoad: function () {
-    if (app.globalData.userInfo) {
+    this.update();
+  },
+  update: function () {
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
+          jindu: this.data.obtainMoney / this.data.money
       })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+      this.drawCircle(this.data.jindu);
+  },
+  onShow: function () {
+      this.update();
   },
   getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+    
   }
 })

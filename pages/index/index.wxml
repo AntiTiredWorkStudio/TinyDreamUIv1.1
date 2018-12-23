@@ -1,13 +1,134 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--小梦想互助首页-->
+<!-- 
+    home:首页页面类名
+    home_content:首页主体内容
+    banner:首页banner图
+    participate_tip:参与互助提示信息
+    tip_main:参与互助提示信息主体
+    tip_left:参与互助提示信息左边部分
+    username:展示用户名
+    tip_right:参与互助提示信息右边部分
+    dream_info:梦想互助池
+    dream_title:梦想池标题（期数）
+    progress:互助进度
+    money:互助资金（已经筹集到的资金）
+    circle:环形进度条
+    timeout:倒计时
+    icon_clock:钟表图标
+    timeout_ui:倒计时文本展示
+    help_money:互助资金展示
+    present_money:目前互助金提示信息
+    targetAndPrice:目标资金以及单价文字展示
+    target_money:互助目标金额（总金额）
+    target_tip:互助目标金额的提示文字
+    price:单价
+    price_tip:单价提示文字
+    price_money:单价（一份的钱数）
+    join_help:参与互助的按钮
+    tip_msg:参与互助说明
+    issue:往期幸运者（按钮）
+    rules:互助规则
+    rules_title:规则标题
+    steps:规则步骤
+    rules_info:规则详情
+ -->
+<view class='home'>
+    <view class='home_content'>
+        <view class='banner'>
+            <image src='http://tdream.antit.top/image/banner.png'></image>
+        </view>
+        <view class='participate_tip '>
+            <view class='tip_main'>
+                <view class='tip_left'>
+                    <image src='http://tdream.antit.top/image/avatar.png'></image>
+                    <text class='username'>Lisa</text>
+                </view>
+                <view class='tip_right'>
+                    <text class='tip_message'>1小时前参与了1份小梦想</text>
+                </view>
+            </view>
+        </view>
+        <view class='dream_info'>
+            <view class='dream_title'>梦想互动20181219期</view>
+            <view class='progress'>
+                <canvas class='circle' style='z-index:-5;width:100%;height:100%' canvas-id='bottom'></canvas>
+                <canvas class='circle' style='width:100%;height:100%' canvas-id='top'></canvas>
+                <view class='timeout'>
+                    <view class='icon_clock'></view>
+                    <text class='timeout_ui'>180:45:32</text>
+                </view>
+                <view class='help_money'>{{'￥'+obtainMoney}}</view>
+                <view class='present_money'>目前互助金</view>
+            </view>
+            <view class='targetAndPrice'>
+                <view class='target'>
+                    <text class='target_money'>{{money}}</text>
+                    <text class='target_tip'>互助目标</text>
+                </view>
+                <view class='price'>
+                    <text class='price_money'>{{price+'/份'}}</text>
+                    <text class='price_tip'>价格</text>
+                </view>
+            </view>
+            <button class='join_help'>参与互助</button>
+            <text class='tip_msg'>每个人支付少量互助金，从中随机产生1名幸运者获得互助总资金启动梦想</text>
+        </view>
+        <view class='issue' bindtap='lucky'>往期幸运者</view>
+        <view class='rules'>
+            <view class='rules_title'>
+                <view class='line left'></view>
+                <view class='circle left'></view>
+                <text>小梦想互助规则</text>
+                <view class='circle right'></view>
+                <view class='line right'></view>
+            </view>
+            <view class='steps'>
+                <view class='step'>
+                    <view class='icon_one icon'></view>
+                    <view class='step_text'>多人互助</view>
+                </view>
+                <view class='line'></view>
+                <view class='step'>
+                    <view class='icon_two icon'></view>
+                    <view class='step_text'>1人幸运</view>
+                </view>
+                <view class='line'></view>
+                <view class='step'>
+                     <view class='icon_three icon'></view>
+                     <view class='step_text'>启动梦想</view>
+                </view>
+                <view class='line'></view>
+                <view class='step'>
+                    <view class='icon_four icon'></view>
+                    <view class='step_text'>梦想报道</view>
+                </view>
+            </view>
+            <view class='rules_info'>
+                <view class='info_msg'>
+                    <view class='rules_msg'>
+                        <view class='rules_box'>
+                            <view class='icon_indexOne'></view>
+                            <text>多人互助 — — 参与互助每个人支付少量互助金</text>
+                        </view>
+                        <view class='rules_box'>
+                            <view class='icon_indexTwo'></view>
+                            <text>1人幸运 — — 公平随机产生1名幸运者</text>
+                        </view>
+                        <view class='rules_box'>
+                            <view class='icon_indexThree'></view>
+                            <text>启动梦想 — — 幸运者得到互助总资金启动梦想</text>
+                        </view>
+                        <view class='rules_box'>
+                            <view class='icon_indexFour'></view>
+                            <text>梦想报道 — — 梦想执行跟踪报道</text>
+                        </view>
+                        <view class='rules_box' bindtap='rules'>
+                            <text>了解更多</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='footer'></view>
+        </view>
+    </view>
 </view>

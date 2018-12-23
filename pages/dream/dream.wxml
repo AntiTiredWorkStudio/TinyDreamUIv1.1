@@ -1,0 +1,51 @@
+<!-- 小梦想页面 -->
+<!-- 
+    dream:小梦想页面
+    dream_main:小梦想主体内容
+    dreamTab:梦想栏与幸运梦想栏切换按钮
+    dream_list:已添加的梦想
+    dream_info:梦想的信息展示
+    dream_logo:梦想图片
+    dream_right:梦想信息部分
+    dream_msg:梦想名称
+    createTime:创建时间及按钮
+    *******************************
+    此处为幸运梦想类名
+    luckyDream：幸运梦想列表
+ -->
+<view class='dream'>
+<!-- 当没有梦想的时候显示空 -->
+    <view class='empty {{isShow ? "show" : ""}}'>
+        <view class='empty_bg'></view>
+    </view>
+    <view class='dream_main {{isShow ? "" : "show"}}'>
+        <view class='dreamTab'>
+            <view class='dream_type'>
+                <button class='{{index+1 == dream ? "active" : ""}}' wx:key="{{index}}" wx:for="{{tabList}}" bindtap='toggle' data-index="{{index}}">{{item.tab}}</button>
+            </view>
+        </view>
+        <view class='dream_list'>
+            <view class='dream_info'>
+                <view class='dream_logo'></view>
+                <view class='dream_right'>
+                    <view class='dream_msg'>现制定一个小目标,完成一个小梦想</view>
+                    <view class='createTime'>
+                        <text class='time'>2018.12.20</text>
+                        <button class='view'>查看详情</button>
+                    </view>
+                </view>
+            </view>
+            <view class='luckyDream'>
+                <view class='dream_logo'>20,0000</view>
+                <view class='dream_right'>
+                    <view class='dream_msg'><text>现制定一个小目标,完成一个小梦想</text></view>
+                    <view class='icon_success'></view>
+                    <view class='tip'>
+                        <text class='tip_text'>梦想池20181220期</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='add'></view>
+</view>

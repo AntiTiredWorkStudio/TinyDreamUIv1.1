@@ -1,0 +1,188 @@
+/* 个人中心样式表 */
+page{
+    background-color: #edf0f5;
+}
+.user{
+    border-top: 1rpx solid #cccac9;
+    min-height: 416rpx;
+}
+/* 用户头像--样式处理 */
+.user .header{
+    margin: 30rpx auto 0;
+    width: 174rpx;
+    height: 174rpx;
+    border-radius: 50%;
+    position: relative;
+    z-index: 20rpx;
+    box-shadow: 2rpx 0rpx 2rpx 2rpx #f1f1f1,-2rpx 0rpx 5rpx 2rpx #f1f1f1,0rpx 2rpx 5rpx 2rpx #f1f1f1,0 -2rpx 5rpx 2rpx #f1f1f1;
+}
+.user .header image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+/* 用户信息--样式处理 */
+.user .user_info{
+    width: 690rpx;
+    height: 306rpx;
+    background-color: #fff;
+    position: absolute;
+    z-index: -5;
+    border-radius: 20rpx;
+    top: 110rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.user .user_info .message{ 
+    width: 578rpx;
+    margin: 0 auto;
+    margin-top: 107rpx;
+}
+.user .user_info .nickName{
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+.user .user_info .message .dream_poolInfo{
+    overflow: hidden;
+}
+.user .user_info .message .dream_poolInfo view.left,view.middle,view.right{
+    float: left;
+}
+.user .user_info .message .dream_poolInfo view.left{
+    margin-right: 30rpx; 
+}
+.user .user_info .message .dream_poolInfo view.middle{
+    margin-left: 45rpx;
+    margin-right: 45rpx;
+}
+.user .user_info .message .dream_poolInfo view.right{
+    margin-right: 0;
+    float: right;
+}
+.user .user_info .message .dream_poolInfo view .num{
+    text-align: center;
+    font-size: 46rpx;
+    font-weight: bolder;
+}
+.user .user_info .message .dream_poolInfo view .tip{
+    font-size: 24rpx;
+    color: #999;
+}
+.user .user_info .message .dream_poolInfo view.line{
+    float: left;
+    width: 2rpx;
+    height: 68rpx;
+    background: #eee;
+}
+
+/* .user .user_info .message .dream_userInfo view{
+    display: inline-block;
+    text-align: center;
+    font-size: 46rpx;
+}
+.user .user_info .message .dream_userInfo view.line{
+    width: 2rpx;
+    height: 68rpx;
+    background: #f8f8f8;
+    margin-right:30rpx;
+    margin-left:20rpx;
+}
+.user .user_info .message .dream_userInfo view text{
+    display: block;
+    font-size: 24rpx;
+    color: #999;
+} */
+/* 个人中心板块--样式处理 */
+.user .plate{
+    width: 690rpx;
+    position: absolute;
+    top: 446rpx;
+    border-radius: 20rpx;
+    left: 30rpx;
+}
+.user .plate .user_title{
+    font-size: 28rpx;
+    margin-bottom: 14rpx;
+}
+.user .plate .user_title text{
+    display: inline-block;
+    width: 10rpx;
+    height: 35rpx;
+    background: #00d094;
+    margin-right: 20rpx; 
+}
+/* 功能模块--样式处理 */
+.user .plate .module{
+    width: 100%;
+    height: 542rpx;
+    background: #fff;
+    border-radius: 20rpx;
+}
+.user .plate .module .block{
+    width: 229rpx;
+    border-right:1rpx solid #eee;
+    float: left;
+    height: 180rpx;
+    border-bottom: 1rpx solid #eee; 
+    position: relative;
+}
+.user .plate .module .block.line{
+    border-right: none;
+}
+.user .plate .module .block.bottom{
+    border-bottom: none;
+}
+.user .plate .module .block .block_main{
+    width: 100%;
+    text-align: center;
+}
+.user .plate .module .block .block_main text{
+    display: block;
+    font-size: 24rpx;
+    margin-top: 20rpx;
+    text-align: center;
+}
+.user .plate .module .block .block_main .icon{
+    width: 100%;
+    margin-top: 30rpx;
+}
+.user .plate .module .block .block_main .icon_join{
+    height: 66rpx;
+    background: url(http://tdream.antit.top/image/join.png) no-repeat center center;
+    background-size: 60rpx 66rpx;
+}
+.user .plate .module .block .block_main .icon_service{
+    height: 68rpx;
+    background: url(http://tdream.antit.top/image/server.png) no-repeat center center;
+    background-size: 70rpx 68rpx;
+}
+.user .plate .module .block .block_main .icon_phone{
+    height: 66rpx;
+    background: url(http://tdream.antit.top/image/tele.png) no-repeat center center;
+    background-size: 48rpx 66rpx;
+}
+.user .plate .module .block .block_main .icon_name{
+    height: 64rpx;
+    background: url(http://tdream.antit.top/image/identify.png) no-repeat center center;
+    background-size: 83rpx 64rpx;
+}
+.user .plate .module .block .block_main .icon_notice{
+    height: 66rpx;
+    background: url(http://tdream.antit.top/image/notice.png) no-repeat center center;
+    background-size: 66rpx 66rpx;
+}
+.user .plate .module .block .block_main .icon_cach{
+    height: 61rpx;
+    background: url(http://tdream.antit.top/image/contact.png) no-repeat center center;
+    background-size: 61rpx 61rpx;
+}
+.user .plate .module .block .block_main .icon_feed{
+    height: 62rpx;
+    background: url(http://tdream.antit.top/image/suggest.png) no-repeat center center;
+    background-size: 62rpx 62rpx;
+}
+.user .plate .module .block .block_main .icon_question{
+    height: 63rpx;
+    background: url(http://tdream.antit.top/image/question.png) no-repeat center center;
+    background-size: 63rpx 63rpx;
+}

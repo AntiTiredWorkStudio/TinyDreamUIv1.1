@@ -1,0 +1,32 @@
+<!--幸运者详情页-->
+<!-- 
+    header:用户头像
+    user_name:名字
+    title:标题（第几期幸运者）
+    info:用户信息
+    dream_info:梦想详情
+    textarea：梦想信息（文本内容）
+ -->
+<view class='lucky_user'>
+    <view class='header'>
+        <image src='http://tdream.antit.top/image/avatar.png'></image>
+    </view>
+    <view class='user_name'>王XX</view>
+    <view class='title'>小梦想互助2018XXXX期幸运者</view>
+    <view class='info'>
+        <view class='icon_flag'></view>
+        <text>28/女/湖北武汉</text>
+    </view>
+    <view class='dream_info'>
+        <view class='dream_title'>梦 想</view>
+        <view class='textarea'>开一家餐厅</view>
+        <view class='dream_title'>梦想详情</view>
+        <view class='textarea'>
+            怀着给别人一个机会也是给自己一个机会参与了小梦想互助，能
+成为幸运者非常激动，一种为梦想奋斗的使命油然而生！
+        </view>
+        <view class='dream_title'>相关照片</view>
+        <image src='http://tdream.antit.top/image/pasion.png'></image>
+        <image src='http://tdream.antit.top/image/pasion.png'></image>
+    </view>
+</view>

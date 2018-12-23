@@ -1,0 +1,79 @@
+<!-- 小梦想互助--我的参与页面 -->
+<!-- 
+    dream_status:小梦想互助池的状态
+    dream_statusTab:切换状态的按钮
+    dream_content:梦想池内容
+    pool:梦想池
+    left:左半部分
+    right：右半部分
+    title：梦想池期数
+    timeout：倒计时
+    money:目前资金
+ -->
+<view class='dreamHelp'>
+    <view class='dream_status'>
+        <view class='dream_statusTab'>
+            <button bindtap='statustab' class='{{index == status ? "active" : ""}}' wx:for="{{statusList}}" wx:for-item="statusTab" data-index="{{index}}" wx:key="{{index}}">{{statusTab.status}}</button>
+        </view>
+    </view>
+    <view class='dream_content'>
+        <view class='pool'>
+            <view class='left'>
+                <view class='title'>梦想互助20181220期</view>
+                <view class='timeout'>
+                    <view class='icon_clock'></view>
+                    <text>180:45:32</text>
+                </view>
+                <view class='money'>￥14,000</view>
+                <view class='tip'>目前互助金</view>
+                <view class='price'>
+                    <view class='target'>互助目标 20000 </view>
+                    <view class='price_money'>价格 5元/份</view>
+                </view>
+            </view>
+            <view class='right'>
+                <view class='above'>
+                 <canvas class='circle' canvas-id='bottom-1' style='z-index:-5;width:170rpx;height:170rpx;'></canvas>
+                 <canvas class='circle' canvas-id='top-1' style='width:170rpx;height:170rpx;'></canvas>
+                 <view class='progress'>70%</view>
+                </view>
+                <button class='under'>参与互助</button>
+            </view>
+        </view>
+        <view class='pool'>
+            <view class='left'>
+                <view class='title'>梦想互助20181220期</view>
+                <view class='timeout'>
+                    <view class='icon_clock'></view>
+                    <text>180:45:32</text>
+                </view>
+                <view class='money'>￥14,000</view>
+                <view class='tip'>目前互助金</view>
+                <view class='price'>
+                    <view class='target'>互助目标 20000 </view>
+                    <view class='price_money'>价格 5元/份</view>
+                </view>
+            </view>
+            <view class='right'>
+                <view class='above'>
+                 <canvas class='circle' canvas-id='bottom-2' style='z-index:-5;width:170rpx;height:170rpx;'></canvas>
+                  <canvas class='circle' canvas-id='top-2' style='width:170rpx;height:170rpx;'></canvas>
+                 <view class='progress'>70%</view>
+                </view>
+                <button class='under'>继续互助</button>
+            </view>
+        </view>
+        <view class='pool'>
+            <view class='left'>
+                <view class='title'>梦想互助20181220期</view>
+                <view class='money'>￥14,000</view>
+                <view class='tip'>互助完成金额</view>
+                <view class='price'>
+                    <view class='target'>互助目标 20000 </view>
+                    <view class='price_money'>价格 5元/份</view>
+                </view>
+            </view>
+            <view class='right'></view>
+        </view>
+    </view>
+</view>

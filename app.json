@@ -1,12 +1,42 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/user/user",
+        "pages/lucky/lucky",
+        "pages/dreamHelp/dreamHelp",
+        "pages/dream/dream",
+        "pages/luckyInfo/luckyInfo",
+        "pages/logs/logs",
+        "pages/rules/rules"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "参与互助",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#00d094",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "参与互助",
+                "iconPath": "img/home.png",
+                "selectedIconPath": "img/home-active.png"
+            },
+            {
+                "pagePath": "pages/dream/dream",
+                "text": "小梦想",
+                "iconPath": "img/dream.png",
+                "selectedIconPath": "img/dream-active.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "个人中心",
+                "iconPath": "img/user.png",
+                "selectedIconPath": "img/user-active.png"
+            }
+        ]
+    }
 }

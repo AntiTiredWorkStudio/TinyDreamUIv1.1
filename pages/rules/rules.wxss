@@ -1,0 +1,5 @@
+/* 互助规则样式表 */
+.rules{
+    width: 100%;
+    border-top: 2rpx solid #d2d0cf;
+}

@@ -1,0 +1,75 @@
+<!--往期幸运者-->
+<!-- 
+    lucky_list：幸运者列表
+    left:幸运者列表左边部分（用户头像）
+    left:幸运者列表中间部分（用户信息）
+    dream_name:幸运者中奖的期数
+    user_info：用户简介
+ -->
+<view class='lucky'>
+    <view class='lucky_list'>
+        <view class='lucky_main' bindtap='luckyInfo'>
+            <view class='left'>
+                <image src='http://tdream.antit.top/image/avatar.png'></image>
+            </view>
+            <view class='middle'>
+                <view class='dream_name'>小梦想互助2018XXXX期幸运者</view>
+                <view class='user_info'>
+                    <view class='user_name'>昵称：王XX</view>
+                    <view class='user_sex'>姓 别：女</view>
+                    <view class='user_age'>年 龄：28</view>
+                </view>
+            </view>
+            <view class='right'>
+                <view class='text_box'>
+                    <view>查</view>
+                    <view>看</view>
+                    <view>详</view>
+                    <view>情</view>
+                </view>
+            </view>
+        </view>
+        <view class='lucky_main' bindtap='luckyInfo'>
+            <view class='left'>
+                <image src='http://tdream.antit.top/image/avatar.png'></image>
+            </view>
+            <view class='middle'>
+                <view class='dream_name'>小梦想互助2018XXXX期幸运者</view>
+                <view class='user_info'>
+                    <view class='user_name'>姓 名：王XX</view>
+                    <view class='user_sex'>姓 别：女</view>
+                    <view class='user_age'>年 龄：28</view>
+                </view>
+            </view>
+            <view class='right'>
+                <view class='text_box'>
+                    <view>查</view>
+                    <view>看</view>
+                    <view>详</view>
+                    <view>情</view>
+                </view>
+            </view>
+        </view>
+        <view class='lucky_main' bindtap='luckyInfo'>
+            <view class='left'>
+                <image src='http://tdream.antit.top/image/avatar.png'></image>
+            </view>
+            <view class='middle'>
+                <view class='dream_name'>小梦想互助2018XXXX期幸运者</view>
+                <view class='user_info'>
+                    <view class='user_name'>姓 名：王XX</view>
+                    <view class='user_sex'>姓 别：女</view>
+                    <view class='user_age'>年 龄：28</view>
+                </view>
+            </view>
+            <view class='right'>
+                <view class='text_box'>
+                    <view>查</view>
+                    <view>看</view>
+                    <view>详</view>
+                    <view>情</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
