@@ -1,0 +1,84 @@
+/* 实名认证样式表 */
+page{
+    background-color: #f0f3f7;
+}
+.auth{
+    border-top: 2rpx solid #d6d4d3;
+    width: 100%;
+}
+.auth .auth_main{
+    width: 690rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    background: #fff;
+    box-shadow:  2rpx 0rpx 10rpx 2rpx rgba(0, 54, 208, .05),-2rpx 0 10rpx 2rpx rgba(0, 54, 208, .05),0 2rpx 10rpx 2rpx rgba(0, 54, 208, .05),0 -2rpx 10rpx 2rpx rgba(0, 54, 208, .05);
+}
+.auth .auth_main .real_name{
+    font-size: 30rpx;
+    color: #606060;
+    position: relative;
+    overflow: hidden;
+    line-height: 30rpx;
+    padding-top: 45rpx;
+    padding-bottom: 42rpx;
+    border-bottom: 2rpx solid #f5f5f5;
+}
+.auth .auth_main .real_name input{
+   display: inline-block;
+   margin-left: 60rpx;
+   color: #b2b2b2;
+   vertical-align: middle;
+}
+.auth .auth_main .real_name view{
+    display: inline-block;
+    position: relative;
+    top: 5rpx;
+}
+.auth .auth_main .real_name view.icon{
+    position: absolute;
+    top: 54rpx;
+    right: 6rpx;
+    width: 26rpx;
+    height: 15rpx;
+    background-color: red;
+    background: url(http://tdream.antit.top/image/yeah.png) no-repeat;
+    background-size: 26rpx 15rpx;
+}
+.auth .auth_main .real_name .steps{
+    margin-top: 30rpx;
+    margin-bottom: 40rpx;
+    color: #b2b2b2;
+}
+.auth .auth_main .real_name .steps view{
+    padding-bottom: 10rpx;
+}
+.auth .auth_main .real_name .id_img{
+    width: 430rpx;
+    height: 326rpx;
+    background-color: #000;
+    margin: 0 auto;
+    display: block;
+    position: static;
+}
+.auth .auth_main .real_name image{
+    width: 430rpx;
+    height: 326rpx;
+}
+.submit{
+    margin: 0 auto;
+    margin-top: 100rpx;
+    width: 660rpx;
+    padding-bottom:120rpx; 
+}
+.submit button::after{
+    border:none;
+}
+.submit button{
+    width: 100%;
+    height: 78rpx;
+    line-height: 78rpx;
+    border-radius: 39rpx;
+    background-color: #00d6a7;
+    color: #fff;
+    font-size: 36rpx;
+}

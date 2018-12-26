@@ -16,6 +16,36 @@ Page({
             url: '/pages/dreamHelp/dreamHelp',
         })
     },
+    // 梦想服务
+    server: function () {
+        wx.navigateTo({
+            url: '/pages/dreamServer/dreamServer',
+        })
+    },
+    // 手机号管理
+    phoneMangement: function () {
+        wx.navigateTo({
+            url: '/pages/phoneMangement/phoneMangement',
+        })
+    },
+    // 系统通知
+    notice: function () {
+        wx.navigateTo({
+            url: '/pages/notice/notice',
+        })
+    },
+    // 实名认证
+    auth: function () {
+        wx.navigateTo({
+            url: '/pages/auth/auth',
+        })
+    },
+    // 常见问题
+    question: function () {
+        wx.navigateTo({
+            url: '/pages/questionInfo/questionInfo',
+        })
+    },
 
     /**
      * 生命周期函数--监听页面加载

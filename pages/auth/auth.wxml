@@ -1,0 +1,43 @@
+<!--实名认证-->
+<view class='auth'>
+    <view class='auth_main'>
+        <form>
+            <view class='real_name'>
+                <view>真实姓名</view>
+                <input placeholder='请输入您的真实姓名' name='real_name'></input>
+            </view>
+            <view class='real_name'>
+                <view>性别</view>
+                <input disabled name='sex'></input>
+                <view class='icon'></view>
+            </view>
+            <view class='real_name'>
+                <view>身份证号</view>
+                <input placeholder='请输入您的身份证号码' name='idcard' type='idcard'></input>
+            </view>
+            <view class='real_name'>
+                <view>银行卡号</view>
+                <input placeholder='请输入您的银行卡号码' name='bankcard' type='idcard'></input>
+            </view>
+            <view class='real_name'>
+                <view>选择银行</view>
+                <input disabled name='bank'></input>
+                <view class='icon'></view>
+            </view>
+            <view class='real_name'>
+                <view>请拍照并上传您的手持身份证正面的照片</view>
+                <view class='steps'>
+                    <view>1.必须本人有效身份证，与基本信息一致</view>
+                    <view>2.请手持身份证正面拍照</view>
+                    <view>3.确保照片的内容完整并清晰可见</view>
+                </view>
+                <view class='id_img'>
+                    <image src='http://tdream.antit.top/image/idf.png'></image>
+                </view>
+            </view>
+        </form>
+    </view>
+    <view class='submit'>
+        <button>提交审核</button>
+    </view>
+</view>

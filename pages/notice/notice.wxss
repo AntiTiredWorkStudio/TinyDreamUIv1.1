@@ -1,0 +1,25 @@
+/*系统通知样式表 */
+.notice{
+    width: 100%;
+    border-top: 2rpx solid #d2d0cf;
+}
+.notice .notice_list{
+    width: 100%;
+    border-bottom: 2rpx solid #f0f0f0;
+    padding-bottom: 20rpx;
+    position: relative;
+    overflow: hidden;
+}
+.notice .notice_list view{
+    width: 690rpx;
+    margin: 30rpx auto 0;
+    font-size: 28rpx;
+    color: #808080;
+}
+.notice .notice_list view text{
+    color: #00d094;
+    text-decoration: underline;
+}
+.notice .notice_list view.time{
+   text-align: right;
+}

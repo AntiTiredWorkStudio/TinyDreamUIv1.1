@@ -1,54 +1,25 @@
-// 小梦想逻辑处理
-// 获取应用实例
-const app = getApp()
-
+// pages/luckyDream/luckyDream.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        // 是否显示空
-        isShow:false,
-        // tab切换数组
-        tabList:[{
-            tab:'小梦想'
-        },{
-            tab:'幸运梦想'
-        }],
-        // 显示那一栏（标记）
-        dream:'1',
-        // 添加梦想的按钮是否显示
-        status:1
+
     },
-    // 点击切换事件
-    toggle: function (e) {
-        console.log(e)
-        this.setData({
-            dream:e.target.dataset.index+1
+
+    // 查看领奖进度
+    look: function () {
+        wx.navigateTo({
+            url: '/pages/award/award',
         })
-        if(e.target.dataset.name == '小梦想'){
-            this.setData({
-                status:1
-            })
-        }else{
-            this.setData({
-                status:0
-            })
-        }
     },
-    // 添加梦想
-    add: function(){
+    // 完善梦想
+    perfect: function () {
         wx.navigateTo({
             url: '/pages/add/add',
         })
-    },
-    // 跳转到dream详情
-    lucky: function(){
-        wx.navigateTo({
-            url: '/pages/luckyDream/luckyDream',
-        })
-    },
+    }, 
 
     /**
      * 生命周期函数--监听页面加载

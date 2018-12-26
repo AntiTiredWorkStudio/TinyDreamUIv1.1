@@ -1,0 +1,27 @@
+/* 问题详情样式表 */
+page{
+    background-color: #f0f0f0;
+}
+.question{
+    background-color: #fff;
+    margin-top: 38rpx;
+}
+.questionInfo{
+    width: 690rpx;
+    margin: 0 auto;
+}
+.questionInfo .question_list{
+    border-bottom: 2rpx solid #ddd;
+    padding-top: 30rpx;
+}
+.questionInfo .title{
+    font-size: 32rpx;
+    padding-bottom: 30rpx;
+}
+.question_list .info{
+    display: inline-block;
+    text-indent: 2em;
+    font-size: 26rpx;
+    color: #999;
+    padding-bottom: 30rpx;
+}

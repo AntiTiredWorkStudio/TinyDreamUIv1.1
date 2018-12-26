@@ -1,0 +1,111 @@
+<!--查看领奖进度-->
+<!-- 
+    tip:说明（告诉用户这个版块作用）
+    bottom:版块下半部分
+ -->
+<view class='award'>
+    <view class='main'>
+        <view class='award_info perfect'>
+            <view class='title'>
+                <view class='left'>完善梦想</view>
+                <view class='right'>等待完善</view>
+            </view>
+            <view class='tip'>
+                小梦想 —— 幸运梦想 —— 完善梦想即可
+            </view>
+            <view class='bottom'>
+                <view class='progress '>
+                    <view class='progress_main'>
+                        <view class='index active'>
+                            <view class='icon'></view>
+                            <view>梦想提交</view>
+                            <view class='line'></view>
+                        </view>
+                         <view class='index'>
+                            <view class='icon'></view>
+                            <view>资料审核</view>
+                            <view class='line'></view>
+                        </view>
+                        <view class='index'>
+                            <view class='icon'></view>
+                            <view>等待打款</view>
+                            <view class='line'></view>
+                        </view>
+                        <view class='index'>
+                            <view class='icon'></view>
+                            <view>互助金颁发</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class='award_info audit'>
+             <view class='title'>
+                <view class='left'>资料审核</view>
+                <view class='right'>资料审核不通过</view>
+            </view>
+            <view class='tip'>
+                资料审核1——2个工作日
+            </view>
+            <view class='bottom'>
+                <view class='progress '>
+                    <view class='progress_main'>
+                        <view class='index active'>
+                            <view class='icon'></view>
+                            <view>梦想提交</view>
+                            <view class='line {{status == 1 ? "activeLine" : ""}}'></view>
+                        </view>
+                         <view class='index active'>
+                            <view class='icon'></view>
+                            <view>资料审核</view>
+                            <view class='line'></view>
+                        </view>
+                        <view class='index'>
+                            <view class='icon'></view>
+                            <view>等待打款</view>
+                            <view class='line'></view>
+                        </view>
+                        <view class='index'>
+                            <view class='icon'></view>
+                            <view>互助金颁发</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class='award_info Issued'>
+            <view class='title'>
+                <view class='left'>互助金颁发</view>
+                <view class='right'></view>
+            </view>
+            <view class='tip'>
+                互助金已颁发
+            </view>
+            <view class='bottom'>
+                <view class='progress '>
+                    <view class='progress_main'>
+                        <view class='index active'>
+                            <view class='icon'></view>
+                            <view>梦想提交</view>
+                            <view class='line {{status == 1 ? "activeLine" : ""}}'></view>
+                        </view>
+                         <view class='index active'>
+                            <view class='icon'></view>
+                            <view>资料审核</view>
+                            <view class='line {{flag == 1 ? "activeLine" : ""}}'></view>
+                        </view>
+                        <view class='index active'>
+                            <view class='icon'></view>
+                            <view>等待打款</view>
+                            <view class='line {{flag == 1 ? "activeLine" : ""}}'></view>
+                        </view>
+                        <view class='index active'>
+                            <view class='icon'></view>
+                            <view>互助金颁发</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

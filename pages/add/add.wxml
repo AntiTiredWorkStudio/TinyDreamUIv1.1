@@ -1,0 +1,54 @@
+<!--添加梦想/完善梦想-->
+<!-- 
+    dream_title:梦想标题填写
+    dream_info：梦想简介
+ -->
+<view class='add'>
+    <view class='mask' style='width:100%;height:100%;display:{{hide==true ? "none" : "block"}}'>
+        <canvas canvas-id='look' style='width:100%;height:{{windowH-100}}px;top:0;left:0'></canvas>
+        <view class='close' bindtap='close'>X</view>
+    </view>
+    <view class='add_main'>
+        <view class='title'>梦想标题（20字以内）</view>
+        <view class='type'>梦想类型只支持：创业/投资/做生意</view>
+        <view class='dream_title'>
+            <input type='text' confirm-type='完成' placeholder='请输入您的梦想标题' maxlength='20'></input>
+        </view>
+        <view class='title info'>梦想简介（140字以内）</view>
+        <view class='dream_title dream_info'>
+            <textarea placeholder='请输入您的梦想简介' maxlength='140'></textarea>
+        </view>
+        <view class='title upload info'>
+            上传打印盖章的
+            <text bindtap='look'>《小梦想互助幸运者梦想互助金申请公函》</text>
+        </view>
+        <view class='btns'>
+            <button class='uploaded'>点击上传</button>
+            <view>
+                还没有公函？立即
+                <text bindtap='download'>下载</text>
+            </view>
+        </view>
+        <view class='text'>
+            我承诺:
+            <view class='tip'>我填写的梦想是本人真实的梦想，不存在任何虚构、隐瞒及伪造的情况，并会积极配合平台的审核和采访报道。如违背上述说明，愿意承担全部法律责任，并不能获得梦想互助金！</view>
+        </view>
+        <view class='area'>
+            <label>
+                <checkbox class='check' value='1' color='#0dd094' checked='true'></checkbox>
+                阅读并同意
+                <text>《小梦想互助平台参与互助协议》</text>
+            </label>
+        </view>
+        <button class='submit' catchtap='submit' data-statu="open">提交</button> 
+    </view>
+    <view class='submit_mask' catchtap='power' data-statu="close" style="display:{{showModalStatus == true ? 'block' : 'none'}}">
+        <view class='bg' animation="{{animationData}}">
+            <view class='title'>资料提交成功</view>
+            <view class='text'>
+                平台将在48小时内进行审核，请您尾号为XXXX的手机保持畅通，我们工作人员会联系您
+            </view>
+            <button catchtap='power' data-statu="close">我知道了</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,52 @@
+<!--系统通知页面-->
+<!-- 
+    notice_list:通知列表
+    notice_message:消息
+ -->
+<view class='notice'>
+    <view class='notice_list'>
+        <view class='notice_message'>
+            <view>
+                感谢您参与了梦想互助20181212期，您本期的编号为52175735、7939139、79317937。
+                <text>查看详情</text>
+            </view>
+            <view class='time'>2018.12.19 15:30</view>
+        </view>
+    </view>
+    <view class='notice_list'>
+        <view class='notice_message'>
+            <view>
+                很遗憾，您参与的梦想互助20181212期为未成为幸运者。
+                <text>查看详情</text>
+            </view>
+            <view class='time'>2018.12.18 15:30</view>
+        </view>
+    </view>
+    <view class='notice_list'>
+        <view class='notice_message'>
+            <view>
+                恭喜您！您参与的梦想互助20181212期成为幸运者，幸运编号为73917391。
+                <text>查看详情</text>
+            </view>
+            <view class='time'>2018.12.18 15:30</view>
+        </view>
+    </view>
+    <view class='notice_list'>
+        <view class='notice_message'>
+            <view>
+                很抱歉，您提交的资料（小梦想/认证资料）审核未通过，请您重新完善提交
+                <text>查看详情</text>
+            </view>
+            <view class='time'>2018.12.18 15:30</view>
+        </view>
+    </view>
+    <view class='notice_list'>
+        <view class='notice_message'>
+            <view>
+                温馨提醒，您的梦想互助金已转款到您尾号8876点卡号，注意查收，如有以为请联系客服。
+                <view style='margin:0'><text>客服电话：15601390196</text></view>
+            </view>
+            <view class='time'>2018.12.18 15:30</view>
+        </view>
+    </view>
+</view>

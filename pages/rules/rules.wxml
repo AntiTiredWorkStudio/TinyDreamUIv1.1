@@ -1,4 +1,66 @@
 <!-- 互助规则页面 -->
+<!-- 
+    rules_main:规则内容
+    rules_message:每条规则的说明
+ -->
 <view class='rules'>
-    
+    <view class='rules_main'>
+        <view class='rules_info'>
+            <view class='rules_list'>
+                <view class='icon icon_index1'></view>
+                <text class='rules_title'>参与互助每个人支付少量互助金</text>
+                <view class='rules_message'>
+                    提交过小梦想的用户都可以参与每期梦想互助，参与互助需要支付少量互助金（5元/份），每参与一份得到一个有机会成为幸运者的编号，每人每天最多参与5份。
+                </view>
+            </view>
+            <view class='line'></view>
+            <view class='rules_list'>
+                <view class='icon icon_index2'></view>
+                <text class='rules_title'>公平随机产生1名幸运者</text>
+                <view class='rules_message'>
+                   每期梦想互助产生1名幸运者， 根据动态福利彩票公布结果计算幸运者编号，公布幸运者时间为：每期梦想互助结束后最新的一个福利彩票开奖后2小时内。 幸运者编号计算公式为：
+                   <view class='subtitle'>计算公式</view>
+                  [（A+B）/ C  ]取余数 + 10000000
+                   <view class='steps'>
+                    数值A = 每期梦想互助结束后最新一期“中国福利彩票”期号+前五个红色球的数字 
+                   </view>
+                   <view class='steps'>
+                    数值B = 每期梦想互助的期号
+                   </view>
+                   <view class='steps'>
+                    数值C= 每期梦想互助参与份数
+                   </view>
+                   <view class='steps'>
+                    举例： 中国福利彩票第2018137期，这期开奖前五个红色球的号码为03,05,11,15,20，平台本期梦想互助的期号为100001，本期参与份数为1000，则幸运者编号计算步骤：
+                    [(2018137+305111520+100001)/ 1000]取余数 +10000000
+                    <view>=(307229658 / 1000)  取余数 +10000000</view>
+                    <view>=658+10000000（658为余数）</view>
+                    <view>=10000658</view>
+                   </view>
+                   <view class='steps'>
+                    <view>得出幸运者编号为：10000658</view>
+                   </view>
+                </view>
+            </view>
+            <view class='line'></view>
+            <view class='rules_list'>
+                <view class='icon icon_index3'></view>
+                <text class='rules_title'>幸运者得到互助总资金启动梦想</text>
+                <view class='rules_message'>
+                    幸运者公布日起，7个工作日内完善梦想并提供相关资料和实名认证，如果审核通过，平台工作人员会在通过后3个工作日内通过审核并完成转账。
+                </view>
+            </view>
+            <view class='line'></view>
+            <view class='rules_list'>
+                <view class='icon icon_index4'></view>
+                <text class='rules_title'>梦想执行跟踪报道</text>
+                <view class='rules_message'>
+                    平台跟踪报道梦想实现进展！
+                    <view class='steps'>
+                       注：每期梦想互助结束时，实际参与互助的总金额没有达到互助目标金额，则幸运者得到的互助金额以每期实际完成的互助总金额为准。 每期梦想互助结束的标准为：互助目标金额达到或互助时间截止！
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>

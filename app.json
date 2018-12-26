@@ -1,13 +1,23 @@
 {
     "pages": [
         "pages/index/index",
+        "pages/add/add",
+        "pages/award/award",
+        "pages/luckyDream/luckyDream",
+        "pages/auth/auth",
+        "pages/notice/notice",
+        "pages/phoneMangement/phoneMangement",
+        "pages/dreamServer/dreamServer",
+        "pages/guide/guide",
+        "pages/rules/rules",
         "pages/user/user",
         "pages/lucky/lucky",
         "pages/dreamHelp/dreamHelp",
         "pages/dream/dream",
         "pages/luckyInfo/luckyInfo",
         "pages/logs/logs",
-        "pages/rules/rules"
+        "pages/questionInfo/questionInfo",
+        "pages/payInfo/payInfo"
     ],
     "window": {
         "backgroundTextStyle": "light",

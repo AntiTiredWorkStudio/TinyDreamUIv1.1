@@ -1,0 +1,13 @@
+<!--问题详情页面-->
+<!-- 
+    title：问题标题
+    question_info:问题详细内容
+ -->
+<view class='question'>
+    <view class='questionInfo'>
+        <view class='question_list' wx:for="{{question}}" wx:key="{{index}}">
+            <view class='title'>{{item.question}}</view>
+            <text class='info'>{{item.text}}</text>
+        </view>
+    </view>
+</view>

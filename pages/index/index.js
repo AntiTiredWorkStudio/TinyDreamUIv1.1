@@ -39,6 +39,19 @@ Page({
       cxt_arc.stroke();
       cxt_arc.draw();
   },
+  //跳转到参与页面
+  dreamInfo(){
+      wx.navigateTo({
+          url: '/pages/dreamHelp/dreamHelp',
+      })
+  }, 
+  join(){
+    wx.navigateTo({
+        url: '/pages/payInfo/payInfo',
+    })
+  },
+
+
   lucky: function () {
       wx.navigateTo({
           url: '/pages/lucky/lucky',

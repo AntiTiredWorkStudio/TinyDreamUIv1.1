@@ -21,7 +21,7 @@
     <view class='dream_main {{isShow ? "" : "show"}}'>
         <view class='dreamTab'>
             <view class='dream_type'>
-                <button class='{{index+1 == dream ? "active" : ""}}' wx:key="{{index}}" wx:for="{{tabList}}" bindtap='toggle' data-index="{{index}}">{{item.tab}}</button>
+                <button class='{{index+1 == dream ? "active" : ""}}' wx:key="{{index}}" wx:for="{{tabList}}" bindtap='toggle' data-name="{{item.tab}}" data-index="{{index}}">{{item.tab}}</button>
             </view>
         </view>
         <view class='dream_list'>
@@ -35,7 +35,7 @@
                     </view>
                 </view>
             </view>
-            <view class='luckyDream'>
+            <view class='luckyDream' bindtap='lucky'>
                 <view class='dream_logo'>20,0000</view>
                 <view class='dream_right'>
                     <view class='dream_msg'><text>现制定一个小目标,完成一个小梦想</text></view>
@@ -47,5 +47,5 @@
             </view>
         </view>
     </view>
-    <view class='add'></view>
+    <view class='add' bindtap='add' style='display:{{status == 1 ? "block" : "none"}}'></view>
 </view>

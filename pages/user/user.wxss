@@ -152,6 +152,7 @@ page{
     background-size: 60rpx 66rpx;
 }
 .user .plate .module .block .block_main .icon_service{
+    margin-top: 28rpx;
     height: 68rpx;
     background: url(http://tdream.antit.top/image/server.png) no-repeat center center;
     background-size: 70rpx 68rpx;
@@ -172,6 +173,7 @@ page{
     background-size: 66rpx 66rpx;
 }
 .user .plate .module .block .block_main .icon_cach{
+    padding-bottom: 6rpx;
     height: 61rpx;
     background: url(http://tdream.antit.top/image/contact.png) no-repeat center center;
     background-size: 61rpx 61rpx;

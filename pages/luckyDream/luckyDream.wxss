@@ -1,0 +1,59 @@
+/* 幸运梦想详情样式表 */
+.luckyDream{
+    border-top: 2rpx solid #dedcdc;
+}
+.luckyDream .background{
+    width: 163rpx;
+    height: 48rpx;
+    margin: 100rpx auto 0;
+    background: url(http://tdream.antit.top/image/congratulate.png) no-repeat;
+    background-size: 163rpx 48rpx;
+}
+.luckyDream .lucky_tip{
+    width: 516rpx;
+    margin: 40rpx auto 0;
+    font-size: 34rpx;
+    color: #ffb115;
+    text-align: center;
+    line-height: 50rpx;
+}
+.luckyDream .gift{
+    width: 486rpx;
+    height: 300rpx;
+    margin: 58rpx auto 0;
+    background: url(http://tdream.antit.top/image/gift.png) no-repeat;
+    background-size: 486rpx 300rpx;
+}
+.luckyDream .tip_title,.luckyDream .tip_message{
+    font-size: 28rpx;
+    text-align: center;
+    color: #999;
+    margin: 58rpx auto 0;
+}
+.luckyDream .tip_message{
+    width: 538rpx;
+    margin-top: 0;
+    margin-bottom: 30rpx;
+}
+.luckyDream .btns{
+    width: 598rpx;
+    margin: 0 auto;
+}
+.luckyDream .btns button::after{
+    border:none;
+}
+.luckyDream .btns button{
+    width: 480rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    color: #fff;
+    background: #00d094;
+    border-radius: 44rpx;
+}
+.luckyDream .btns .look{
+    margin-top: 120rpx;
+    float: right;
+    text-decoration: underline;
+    color: #00d094;
+    font-size: 32rpx;
+}

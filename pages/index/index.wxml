@@ -48,7 +48,7 @@
                 </view>
             </view>
         </view>
-        <view class='dream_info'>
+        <view class='dream_info' bindtap='dreamInfo'>
             <view class='dream_title'>梦想互动20181219期</view>
             <view class='progress'>
                 <canvas class='circle' style='z-index:-5;width:100%;height:100%' canvas-id='bottom'></canvas>
@@ -70,7 +70,7 @@
                     <text class='price_tip'>价格</text>
                 </view>
             </view>
-            <button class='join_help'>参与互助</button>
+            <button class='join_help' catchtap='join'>参与互助</button>
             <text class='tip_msg'>每个人支付少量互助金，从中随机产生1名幸运者获得互助总资金启动梦想</text>
         </view>
         <view class='issue' bindtap='lucky'>往期幸运者</view>

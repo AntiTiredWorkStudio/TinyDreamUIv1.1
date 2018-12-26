@@ -19,7 +19,7 @@
             <view class='dream_poolInfo'>
                 <view class='left'>
                     <view class='num'>0</view>
-                    <view class='tip'>参与中的池</view>
+                    <view class='tip'>参与中的期数</view>
                 </view>
                 <view class='line'></view>
                 <view class='middle'>
@@ -44,25 +44,25 @@
                 </view>
             </view>
             <view class='block'>
-                <view class='block_main'>
+                <view class='block_main' bindtap='notice'>
                     <view class='icon_notice icon'></view>
                     <text>系统通知</text>
                 </view>
             </view>
             <view class='block line'>
-                <view class='block_main'>
+                <view class='block_main' bindtap='phoneMangement'>
                     <view class='icon_phone icon'></view>
                     <text>手机号管理</text>
                 </view>
             </view>
             <view class='block'>
-                <view class='block_main'>
+                <view class='block_main' bindtap='auth'>
                     <view class='icon_name icon'></view>
                     <text>实名认证</text>
                 </view>
             </view>
             <view class='block'>
-                <view class='block_main'>
+                <view class='block_main' bindtap='server'>
                     <view class='icon_service icon'></view>
                     <text>梦想服务</text>
                 </view>
@@ -80,7 +80,7 @@
                 </view>
             </view>
             <view class='block bottom'>
-                <view class='block_main'>
+                <view class='block_main' bindtap='question'>
                     <view class='icon_question icon'></view>
                     <text>常见问题</text>
                 </view>

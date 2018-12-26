@@ -1,0 +1,108 @@
+/* 领奖进度样式表 */
+page{
+    background-color: #edf0f5;
+}
+.award{
+    border-top: 2rpx solid #dedcdc;
+}
+.award .main .award_info{
+    width: 690rpx;
+    margin: 30rpx auto 0;
+    min-height: 290rpx;
+    border-radius: 20rpx;
+    background-color: #fff;
+    box-shadow: 2rpx 0rpx 20rpx 2rpx rgba(0, 54, 208, .05),-2rpx 0 20rpx 2rpx rgba(0, 54, 208, .05),0 2rpx 20rpx 2rpx rgba(0, 54, 208, .05),0 -2rpx 20rpx 2rpx rgba(0, 54, 208, .05);
+    position: relative;
+}
+.award .main .award_info .title{
+     padding-top: 40rpx;
+     margin-bottom: 25rpx;
+     overflow: hidden;
+}
+.award .main .award_info .title .left{
+    float: left;
+    margin-left: 36rpx;
+    font-size: 34rpx;
+    color: #333;
+}
+.award .main .award_info .title .right{
+    float: right;
+    margin-right: 30rpx;
+    font-size: 30rpx;
+    color: #00d094;
+}
+.award .main .award_info .tip{
+    margin-left: 36rpx;
+    font-size: 24rpx;
+    color: #ccc;
+    padding-bottom: 46rpx;
+}
+.award .main .award_info .bottom .progress{
+    border-top: 2rpx dashed #00d094;
+    padding-top: 46rpx;
+    padding-bottom: 30rpx;
+}
+.award .main .award_info .bottom .progress .progress_main{
+    width: 610rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.award .main .award_info .bottom .progress .progress_main .index,.award .main .award_info .bottom .progress .progress_main .line{
+    float: left;
+    font-size: 26rpx;
+    color: #ccc;
+    position: relative;
+    text-align: center;
+    margin-right:55rpx; 
+}
+.award .main .award_info .bottom .progress .progress_main .index:last-child{
+    margin-right: 0; 
+}
+.award .main .award_info .bottom .progress .progress_main .line{
+    margin: 0;
+    height: 4rpx;
+    width: 160rpx;
+    background-color: #eee;
+    position: absolute;
+    left: 52rpx;
+    top: 10rpx;
+}
+.award .main .award_info .bottom .progress .progress_main .index .icon{
+    background: #eee;
+    width: 28rpx;
+    height: 28rpx;
+    border-radius: 50%;
+    margin: 0 auto 20rpx;
+    position: relative;
+    z-index: 10;
+}
+/* 完成后的样式 */
+.award .main .award_info .bottom .progress .progress_main .index.active .icon{
+    background: url(http://tdream.antit.top/image/right.png) no-repeat;
+    background-size: 28rpx 28rpx;
+}
+.award .main .award_info .bottom .progress .progress_main .index.active{
+    color: #333;
+}
+.award .main .award_info .bottom .progress .progress_main .index.active .activeLine.line{
+    background: #00d094;
+}
+/* 审核资料部分样式 */
+.award .main .award_info.audit .title .right{
+    /* 不通过 */
+    color: red;
+    /* 通过 */
+    /* color: #00d094； */
+}
+/* 打款部分样式 */
+.award .main .award_info.Issued .title .right{
+    position: absolute;
+    top: 10rpx;
+    right: 20rpx;
+    width: 140rpx;
+    height: 140rpx;
+    background: url(http://tdream.antit.top/image/paid.png) no-repeat;
+    background-size: 140rpx 140rpx;
+    background-color: red;
+}

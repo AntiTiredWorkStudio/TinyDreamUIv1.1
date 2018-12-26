@@ -1,0 +1,76 @@
+/* 梦想服务--样式处理 */
+page{
+    background-color: #f0f3f7;
+    width: 100%;
+}
+.avatar{
+    width: 206rpx;
+    height: 206rpx;
+    border-radius: 50%;
+    margin: 50rpx auto 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+}
+.avatar image{
+    width: 198rpx;
+    height: 198rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 4rpx;
+    left: 4rpx;
+}
+.dreamServer .main{
+    width: 680rpx;
+    border-radius: 20rpx;
+    background-color: #fff;
+    position: absolute;
+    top: 153rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 梦想服务内容--样式处理 */
+.dreamServer .main .main_box{
+    width: 100%;
+    margin-top: 128rpx;
+    text-align: center;
+    padding-bottom: 38rpx;
+}
+.dreamServer .main .main_box .title{
+    width: 260rpx;
+    margin: 0 auto;
+    height: 62rpx;
+    background-color: #00d6a7;
+    color: #fff;
+    border-radius: 31rpx;
+    font-size: 36rpx;
+    line-height: 62rpx;
+}
+.dreamServer .main .main_box .text{
+    padding-top: 34rpx;
+    font-size: 28rpx;
+    color: #00d6a7;
+    padding-bottom: 30rpx;
+}
+.dreamServer .main .main_box .tip{
+    font-size: 28rpx;
+    padding-top: 52rpx;
+    margin-bottom: 60rpx;
+}
+.dreamServer .main .main_box .qrcode{
+    width: 413rpx;
+    height: 413rpx;
+    background-color: red;
+    margin: 0 auto;
+    background: url(http://tdream.antit.top/image/frame.png) no-repeat;
+    background-size: 413rpx 413rpx;
+}
+.dreamServer .main .main_box .qrcode_main{
+    width: 333rpx;
+    height: 333rpx;
+    position: relative;
+    top: 40rpx;
+    left:40rpx;
+    background: url(http://tdream.antit.top/image/qrcode.png) no-repeat;
+    background-size: 333rpx 333rpx;
+}

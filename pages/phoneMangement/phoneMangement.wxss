@@ -1,0 +1,88 @@
+/* 手机号管理--样式处理 */
+.phoneMangement{
+    border-top: 2rpx solid #d6d4d3;
+
+}
+.title{
+    margin-top: 80rpx;
+    text-align: center;
+    font-size: 36rpx;
+}
+.oldPhoneNum{
+    font-size: 30rpx;
+    color: #bababa;
+    margin-top: 20rpx;
+    text-align: center;
+}
+.phoneNum{
+    width: 630rpx;
+    margin: 0 auto;
+    border-bottom: 2rpx solid #00d6a7;
+    padding-bottom: 20rpx;
+}
+.phoneNum .icon{
+    width: 44rpx;
+    height: 60rpx;
+    display: inline-block;
+    margin-right: 35rpx;
+    background: url(http://tdream.antit.top/image/tele.png) no-repeat;
+    background-size: 44rpx 60rpx;
+}
+.phoneNum input{
+    display: inline-block;
+    font-size: 32rpx;
+    color: #b2b2b2;
+}
+.auth_code{
+    border-bottom: 2rpx solid #ccc;
+    width: 630rpx;
+    margin: 0 auto;
+    padding-top: 70rpx;
+    padding-bottom: 20rpx;
+    position: relative
+}
+.auth_code .icon{
+    width: 49rpx;
+    height: 41rpx;
+    display: inline-block;
+    margin-right: 35rpx;
+    background: url(http://tdream.antit.top/image/mail_grey.png) no-repeat;
+    background-size: 49rpx 41rpx;
+}
+.auth_code .icon.focus{
+    background: url(http://tdream.antit.top/image/mail_green.png);
+    background-size: 49rpx 41rpx;
+}
+.auth_code input{
+    display: inline-block;
+    font-size: 32rpx;
+    color: #b2b2b2;
+}
+button::after{
+    border:none;
+}
+button{
+    color: #fff;
+    background-color: #00d6a7;
+    margin: 0 auto;
+    margin-top: 534rpx;
+    height: 78rpx;
+    line-height: 78rpx;
+    border-radius: 39rpx;
+    width: 660rpx;
+}
+.auth_code button{
+    width: 180rpx;
+    height: 58rpx;
+    font-size: 30rpx;
+    line-height: 58rpx;
+    border-radius: 29rpx;
+    position: absolute;
+    margin: 0;
+    top: 53rpx;
+    right: 0;
+}
+.auth_code button.disabled{
+    background-color: #c0c0c0;
+    color: #999;
+}

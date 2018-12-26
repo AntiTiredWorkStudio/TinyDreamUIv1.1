@@ -1,0 +1,23 @@
+<!--手机号管理页面-->
+<!-- 
+    title：标题
+    oldPhoneNum：当前绑定的手机号
+    phoneNum：要绑定的手机号
+    auth_code:数字验证码
+ -->
+<view class='phoneMangement'>
+    <view class='title'>输入需要绑定的手机号</view>
+    <view class='oldPhoneNum' style='display:{{isphone ? "block" : "none"}}'>当前绑定的手机号{{oldPhoneNum}}</view>
+    <form bindsubmit='submit'>
+        <view class='phoneNum' style='margin-top:{{isphone ? 85 : 132}}rpx'>
+            <view class='icon icon_phone'></view>
+            <input placeholder='请输入需要绑定的手机号' name="phoneNum" type='number' maxlength='11' focus='true' value='' bindinput='check' bindblur='check'></input>
+        </view>
+        <view class='auth_code'>
+            <view class='icon icon_mail {{changebg ? "focus" : ""}}'></view>
+            <input placeholder='验证码' name="code" type='number' maxlength='6' value='' bindfocus='changebg'></input>
+            <button class='getCode {{isdisable ? "disabled" : ""}}' disabled='{{isdisable}}' bindtap='getCode'>{{tip}}</button>
+        </view>
+        <button form-type='submit'>提交</button>
+    </form>
+</view>

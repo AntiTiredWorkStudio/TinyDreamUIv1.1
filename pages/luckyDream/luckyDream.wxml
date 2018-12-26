@@ -1,0 +1,20 @@
+<!--幸运梦想详情-->
+<!-- 
+    lucky_tip:中奖提示文字
+    tip_message:温馨提示
+ -->
+<view class='luckyDream'>
+    <view class='background'></view>
+    <view class='lucky_tip'>
+        恭喜您在：...某期...某个梦想...某个编号成为幸运编号，本期互助总资金为100元
+    </view>
+    <view class='gift'></view>
+    <view class='tip_title'>提示：</view>
+    <view class='tip_message'>
+       为了更好地给您颁发梦想互助金，请您务必在7个工作日内完善梦想和实名认证！
+    </view>
+    <view class='btns'>
+        <button>完善梦想</button>
+        <view class='look' bindtap='look'>查看领奖进度</view>
+    </view>
+</view>

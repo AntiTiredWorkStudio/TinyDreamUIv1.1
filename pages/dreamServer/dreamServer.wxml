@@ -1,0 +1,23 @@
+<!--梦想服务页面-->
+<!-- 
+    avatar:用户头像
+    main_box:内容的盒子
+    text:文字
+ -->
+<view class='dreamServer'>
+    <view class='avatar'>
+        <image src='http://tdream.antit.top/image/avatar.png'></image>
+    </view>
+    <view class='main'>
+        <view class='main_box'>
+            <view class='title'>梦想服务</view>
+            <view class='text'>电子书籍服务</view>
+            <view class='text'>专业导师指导</view>
+            <view class='text'>梦想执行宣传报道</view>
+            <view class='tip'>长按二维码复制客服微信</view>
+            <view class='qrcode'>
+                <view class='qrcode_main'></view>
+            </view>
+        </view>
+    </view>
+</view>
