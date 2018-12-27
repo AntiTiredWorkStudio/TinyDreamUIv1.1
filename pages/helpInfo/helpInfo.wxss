@@ -1,0 +1,210 @@
+/**详情样式表**/
+/* 梦想互助池--样式处理 */
+page{
+    background: #f0f0f0;
+}
+.home{
+    border-top: 2rpx solid #eddddd;
+    background: #fff;
+    padding-bottom: 
+}
+.home .home_content{
+    width: 690rpx;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.home .home_content .dream_info{
+    width: 100%;
+    margin-top: 20rpx;
+    border-radius: 10rpx;
+    box-shadow: 2rpx 0rpx 10rpx 2rpx rgba(0, 54, 208, .1),-2rpx 0 10rpx 2rpx rgba(0, 54, 208, .1),0 2rpx 10rpx 2rpx rgba(0, 54, 208, .1),0 -2rpx 10rpx 2rpx rgba(0, 54, 208, .1);
+    height: 770rpx;
+    text-align: center;
+}
+.home .home_content .dream_info .dream_title{
+    margin-left: 30rpx;
+    padding-top: 30rpx;
+    font-size: 32rpx;
+    text-align: left;
+}
+.home .home_content .dream_info .progress{
+    margin-top: 50rpx;
+    margin-left: 150rpx;
+    width: 380rpx;
+    height:380rpx;
+    position: relative;
+}
+.home .home_content .dream_info .progress .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home .home_content .dream_info .progress .timeout{
+    position: absolute;
+    top: 105rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.home .home_content .dream_info .progress .timeout .icon_clock{
+    width: 23rpx;
+    height:23rpx;
+    background: url(http://tdream.antit.top/image/clock.png) no-repeat;
+    background-size: 23rpx 23rpx;
+    margin-right: 10rpx;
+    display: inline-block;
+}
+.home .home_content .dream_info .progress .timeout .timeout_ui{
+    font-size: 28rpx;
+    color: #00d094;
+    display: inline-block;
+}
+.home .home_content .dream_info .progress .help_money{
+    position: absolute;
+    top: 150rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 65rpx;
+    color: #ffc057;
+}
+.home .home_content .dream_info .progress .present_money{
+    position: absolute;
+    bottom: 100rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24rpx;
+    color: #999;
+}
+.home .home_content .dream_info .targetAndPrice{
+    width: 600rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 40rpx;
+}
+.home .home_content .dream_info .targetAndPrice .target{
+    float: left;
+}
+.home .home_content .dream_info .targetAndPrice .target.center{
+    margin-left: 135rpx;
+}
+.home .home_content .dream_info .targetAndPrice .target .target_money,.home .home_content .dream_info .targetAndPrice .price .price_money{
+    font-size: 38rpx;
+    color: #00d094;
+    margin-bottom: 10rpx;
+    display: block;
+    text-align: center;
+}
+.home .home_content .dream_info .targetAndPrice .target .target_tip,.home .home_content .dream_info .targetAndPrice .price .price_tip{
+    font-size: 24rpx;
+    color: #999;
+    display: block;
+}
+.home .home_content .dream_info .targetAndPrice .price{
+    float: right;
+}
+/* 参与互助--样式处理 */
+.home .home_content .dream_info .join_help::after{
+    border:none;
+}
+.home .home_content .dream_info .join_help{
+    width: 600rpx;
+    margin: 0 auto 0;
+    position: relative;
+    top: 34rpx;
+    height: 78rpx;
+    line-height: 78rpx;
+    background-color: #00d094;
+    border-radius: 39rpx;
+    font-size: 42rpx;
+    color: #fff; 
+}
+.home .home_content .dream_info .tip_msg{
+    font-size: 20rpx;
+    color: #999;
+    position: relative;
+    top: 25rpx;
+}
+.home .home_content .issue{
+    float: right;
+    font-size: 30rpx;
+    color:#595959;
+    text-decoration: underline;
+    margin-top: 25rpx;
+}
+/* tab切换--样式处理 */
+.home .home_content .tab{
+    width: 466rpx;
+    background-color: #fff;
+    margin: 94rpx auto 0;
+    overflow: hidden;
+    font-size: 32rpx;
+}
+.home .home_content .tab view.left{
+    float: left;
+    padding-bottom: 20rpx;
+    color: #808080;
+}
+.home .home_content .tab view.right{
+    float: right;
+    padding-bottom: 20rpx;
+     color: #808080;
+}
+.home .home_content .tab view.active{
+    border-bottom: 2rpx solid #00d094;
+    color: #00d094;
+}
+.home .tabBox{
+    background-color: #f0f0f0f0;
+}
+.home .tabBox .tip{
+    padding-top: 128rpx;
+    font-size: 28rpx;
+    color: #808080;
+    text-align: center;
+}
+.home .tabList{
+    width: 690rpx;
+    margin:0 auto;
+    margin-top: 30rpx;
+    overflow: hidden;
+}
+.home .tabList .number{
+    width: 330rpx;
+    height: 68rpx;
+    line-height: 68rpx;
+    border-radius: 34rpx;
+    float: left;
+    margin-right: 20rpx;
+    font-size: 28rpx;
+    background-color: #ffc057;
+    color: #fff;
+    margin-top: 30rpx;
+    text-align: center;
+}
+.home .tabList .number:nth-child(2n){
+    margin-right: 0;
+}
+.home .user_number{
+    width: 100%;
+    background-color: #f0f0f0;
+}
+.home .user_number .user{
+    width: 638rpx;
+    margin: 0 auto;
+    padding-top: 30rpx;
+    overflow: hidden;
+}
+.home .user_number .user view{
+    float: left;
+    font-size: 26rpx;
+}
+.home .user_number .user view.phone{
+    margin-right: 50rpx;
+}
+.home .user_number .user view.num{
+    margin-right: 50rpx;
+}
+.home .user_number .user view.title{
+    float: right;
+}
+
+

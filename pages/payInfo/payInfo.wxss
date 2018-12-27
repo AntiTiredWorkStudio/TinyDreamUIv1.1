@@ -1,1 +1,239 @@
 /* pages/payInfo/payInfo.wxss */
+.payInfo{
+    border-top: 2rpx solid #eeeeed;
+}
+/* 梦想互助池--样式处理 */
+.home .home_content .dream_info{
+    width: 100%;
+    margin-top: 20rpx;
+    border-radius: 10rpx;
+    height: 770rpx;
+    text-align: center;
+}
+.home .home_content .dream_info .dream_title{
+    margin: 0 auto;
+    width: 590rpx;
+    font-size: 32rpx;
+    text-align: left;
+}
+.home .home_content .dream_info .progress{
+   margin: 50rpx auto 0;
+    width: 380rpx;
+    height:380rpx;
+    position: relative;
+}
+.home .home_content .dream_info .progress .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home .home_content .dream_info .progress .timeout{
+    position: absolute;
+    top: 105rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.home .home_content .dream_info .progress .timeout .icon_clock{
+    width: 23rpx;
+    height:23rpx;
+    background: url(http://tdream.antit.top/image/clock.png) no-repeat;
+    background-size: 23rpx 23rpx;
+    margin-right: 10rpx;
+    display: inline-block;
+}
+.home .home_content .dream_info .progress .timeout .timeout_ui{
+    font-size: 28rpx;
+    color: #00d094;
+    display: inline-block;
+}
+.home .home_content .dream_info .progress .help_money{
+    position: absolute;
+    top: 150rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 65rpx;
+    color: #ffc057;
+}
+.home .home_content .dream_info .progress .present_money{
+    position: absolute;
+    bottom: 100rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24rpx;
+    color: #999;
+}
+
+/* 修改的样式 */
+.home .home_content .dream_info .targetAndPrice{
+    width: 600rpx;
+    margin: 0 auto;
+}
+.home .home_content .dream_info .targetAndPrice .target{
+    overflow: hidden;
+    height: 50rpx;
+    line-height: 50rpx;
+    position: relative;
+    margin-bottom: 56rpx;
+}
+.home .home_content .dream_info .targetAndPrice .target view:nth-child(2){
+    position: absolute;
+    color: #999;
+    left: 0;
+    font-size: 26rpx;
+}
+.home .home_content .dream_info .targetAndPrice .target view:nth-child(1) view{
+    width: 70rpx;
+    height: 37rpx;
+    display: inline-block;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-size: 70rpx 37rpx; 
+}
+.copies{
+    margin-right: 0 !important;
+    line-height: 25rpx;
+}
+.copies_money{
+    position: relative;
+    margin-right: 0!important;
+}
+.copies text{
+    font-size: 30rpx;
+    top:0;
+    position: absolute;
+    left: 80rpx;
+    color: #333;
+}
+.home .home_content .dream_info .targetAndPrice .target view:nth-child(1) view.icon_add{
+    right: 110rpx;
+    top: 6.5rpx;
+    background-image: url(http://tdream.antit.top/image/plus.png)
+}
+.home .home_content .dream_info .targetAndPrice .target view:nth-child(1) view.icon_incer{
+    position: absolute;
+    right: 0;
+    top: 6.5rpx;
+    background-image: url(http://tdream.antit.top/image/substract.jpg)
+}
+
+.home .home_content .dream_info .targetAndPrice .target view:nth-child(1){
+    width: 180rpx;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin-right: 24rpx;
+    color: #00d094;
+    font-size: 38rpx;
+}
+.dream .dream{
+    font-size: 30rpx !important;
+    color: #333 !important;
+    margin-right: 0 !important;
+}
+.dream .icon_select{
+    width: 16rpx !important;
+    height: 28rpx !important;
+    position: absolute;
+    right: 0;
+    top: 11rpx;
+    background: url(http://tdream.antit.top/image/arrow.png) no-repeat;
+    background-size: 16rpx 28rpx !important;
+}
+.price{
+    text-align: center;
+    font-size: 26rpx;
+    color: #999;
+}
+.price text{
+    color: #00d094;
+    font-size: 36rpx;
+}
+/* 参与互助--样式处理 */
+.home .home_content .dream_info .join_help::after{
+    border:none;
+}
+.home .home_content .dream_info .join_help{
+    width: 600rpx;
+    margin: 0 auto 0;
+    position: relative;
+    top: 34rpx;
+    height: 78rpx;
+    line-height: 78rpx;
+    background-color: #00d094;
+    border-radius: 39rpx;
+    font-size: 42rpx;
+    color: #fff; 
+}
+.home .home_content .dream_info .tip_msg{
+    font-size: 20rpx;
+    color: #999;
+    position: relative;
+    top: 25rpx;
+}
+/* 分享按钮 */
+.share{
+    width: 39rpx;
+    height: 43rpx;
+    background: url(http://tdream.antit.top/image/share.jpg) no-repeat;
+    background-size: 39rpx 43rpx;
+    position: absolute;
+    top: 30rpx;
+    right: 66rpx;
+}
+/* 弹窗 */
+.home .mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mask .mask_bg{
+    background-color: #fff;
+    width: 510rpx;
+    min-height: 560rpx;
+    position: absolute;
+    border-radius: 20rpx;
+    left: 120rpx;
+    top: 340rpx;
+}
+.mask .mask_bg .icon_success{
+    width: 300rpx;
+    height: 153rpx;
+    margin: 30rpx auto 0;
+}
+.mask .mask_bg .tip{
+    width: 330rpx;
+    margin: 50rpx auto;
+    text-align: center;
+    font-size: 28rpx;
+    color: #4c4c4c;
+    white-space: normal
+}
+.mask .mask_bg .notice{
+    width: 466rpx;
+    margin: 0 auto 38rpx;
+    font-size: 22rpx;
+    color: #808080;
+    text-align: center;
+    white-space: normal
+}
+.mask .mask_bg button{
+    background-color: #00d094;
+    color: #fff;
+    width: 400rpx;
+    height: 82rpx;
+    border-radius: 41rpx;
+    margin: 0 auto;
+    line-height: 82rpx;
+    font-size: 32rpx;
+}
+/* 关闭 */
+.mask .close{
+    width: 60rpx;
+    height: 60rpx;
+    position: absolute;
+    top: 70rpx;
+    right: 30rpx;
+}

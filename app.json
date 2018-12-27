@@ -1,6 +1,9 @@
 {
     "pages": [
+        "pages/end/end",
         "pages/index/index",
+        "pages/helpInfo/helpInfo",
+        "pages/payInfo/payInfo",
         "pages/add/add",
         "pages/award/award",
         "pages/luckyDream/luckyDream",
@@ -16,8 +19,7 @@
         "pages/dream/dream",
         "pages/luckyInfo/luckyInfo",
         "pages/logs/logs",
-        "pages/questionInfo/questionInfo",
-        "pages/payInfo/payInfo"
+        "pages/questionInfo/questionInfo"
     ],
     "window": {
         "backgroundTextStyle": "light",

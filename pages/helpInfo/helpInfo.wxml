@@ -1,0 +1,87 @@
+<!--小梦想互助首页-->
+<!-- 
+    home:首页页面类名
+    home_content:首页主体内容
+    banner:首页banner图
+    participate_tip:参与互助提示信息
+    tip_main:参与互助提示信息主体
+    tip_left:参与互助提示信息左边部分
+    username:展示用户名
+    tip_right:参与互助提示信息右边部分
+    dream_info:梦想互助池
+    dream_title:梦想池标题（期数）
+    progress:互助进度
+    money:互助资金（已经筹集到的资金）
+    circle:环形进度条
+    timeout:倒计时
+    icon_clock:钟表图标
+    timeout_ui:倒计时文本展示
+    help_money:互助资金展示
+    present_money:目前互助金提示信息
+    targetAndPrice:目标资金以及单价文字展示
+    target_money:互助目标金额（总金额）
+    target_tip:互助目标金额的提示文字
+    price:单价
+    price_tip:单价提示文字
+    price_money:单价（一份的钱数）
+    join_help:参与互助的按钮
+    tip_msg:参与互助说明
+    issue:往期幸运者（按钮）
+    rules:互助规则
+    rules_title:规则标题
+    steps:规则步骤
+    rules_info:规则详情
+ -->
+<view class='home'>
+    <view class='home_content'>
+        <view class='dream_info' bindtap='dreamInfo'>
+            <view class='dream_title'>梦想互动20181219期</view>
+            <view class='progress'>
+                <canvas class='circle' style='width:100%;height:100%' canvas-id='bottom'></canvas>
+                <canvas class='circle' style='width:100%;height:100%' canvas-id='top'></canvas>
+                <view class='timeout'>
+                    <view class='icon_clock'></view>
+                    <text class='timeout_ui'>180:45:32</text>
+                </view>
+                <view class='help_money'>{{'￥'+obtainMoney}}</view>
+                <view class='present_money'>目前互助金</view>
+            </view>
+            <view class='targetAndPrice'>
+                <view class='target'>
+                    <text class='target_money'>￥{{money}}</text>
+                    <text class='target_tip'>互助目标</text>
+                </view>
+                 <view class='target center'>
+                    <text class='target_money'>互助中</text>
+                    <text class='target_tip'>中奖者编号</text>
+                </view>
+                <view class='price'>
+                    <text class='price_money'>0</text>
+                    <text class='price_tip'>总参与份数</text>
+                </view>
+            </view>
+            <button class='join_help' catchtap='join'>参与互助</button>
+        </view>
+        <view class='tab'>
+            <view class='left active'>我的编号</view>
+            <view class='right'>用户编号 </view>
+        </view>
+    </view>
+    <view class='tabBox'>
+        <view class='tip'>请先参与互助</view>
+        <view class='tabList'>
+            <view class='number'>20181205-10000001</view>
+            <view class='number'>20181205-10000001</view>
+            <view class='number'>20181205-10000001</view>
+            <view class='number'>20181205-10000001</view>
+        </view>
+    </view>
+    <view class='user_number'>
+        <view class='user'>
+            <view class='phone'>185****2235</view>
+            <view class='num'>1 份</view>
+            <view class='look' style='color:#00d094'>查看编号</view>
+            <view class='title'>开一家餐厅</view>
+        </view>
+    </view>
+</view>

@@ -9,10 +9,7 @@ Page({
         price: 5,
         remaining: 20,
         obtainMoney: '80',
-        jindu: '',
-        num:1,
-        dream:'开茶馆',
-        ishide:false
+        jindu: ''
     },
     //绘制进度条
     drawCircle(jindu) {
@@ -42,57 +39,28 @@ Page({
         cxt_arc.stroke();
         cxt_arc.draw();
     },
-    // 微信支付
-    wxPay:function () {
-        wx.requestPayment({
-            timeStamp: '',
-            nonceStr: '',
-            package: '',
-            signType: '',
-            paySign: '',
+    //跳转到参与页面
+    dreamInfo() {
+        wx.navigateTo({
+            url: '/pages/dreamHelp/dreamHelp',
         })
     },
-    // 增加份数
-    add: function () {
-        console.log(1)
-        var number = this.data.num;
-        number++;
-        console.log(number)
-        if(number > 5){
-            this.setData({
-                num:5
-            })
-            wx.showToast({
-                title: '每人每天最多只能参与5份',
-                icon:'none',
-                mask:true
-            })
-            return;
-        }
-        this.setData({
-            num: number
+    join() {
+        wx.navigateTo({
+            url: '/pages/payInfo/payInfo',
         })
     },
-    // 减少份数
-    incer: function () {
-        var number = this.data.num;
-        number--;
-        if(number < 0){
-            this.setData({
-                num: 0
-            })
-            return;
-        }
-        this.setData({
-            num:number
+
+
+    lucky: function () {
+        wx.navigateTo({
+            url: '/pages/lucky/lucky',
         })
     },
-    // 关闭弹窗
-    close: function(){
-        this.setData({
-            ishide:false
+    rules: function () {
+        wx.navigateTo({
+            url: '/pages/rules/rules',
         })
-        console.log(this.data.ishide)
     },
     onLoad: function () {
         this.update();

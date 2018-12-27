@@ -1,4 +1,56 @@
 <!--支付详情页面-->
-<view class='payInfo'>
-    
+<!-- 
+    share：分享
+    copies_money：份数
+    dream：选择梦想
+    price：单价
+    wxPay：微信支付按钮
+    （其余和首页类名相同）
+ -->
+<view class='payInfo home'>
+    <view class='home_content'>
+        <view class='dream_info'>
+            <view class='dream_title'>梦想互动20181219期</view>
+            <view class='share'></view>
+            <view class='progress'>
+                <canvas class='circle' style='z-index:-5;width:100%;height:100%' canvas-id='bottom'></canvas>
+                <canvas class='circle' style='width:100%;height:100%' canvas-id='top'></canvas>
+                <view class='timeout'>
+                    <view class='icon_clock'></view>
+                    <text class='timeout_ui'>180:45:32</text>
+                </view>
+                <view class='help_money'>{{'￥'+obtainMoney}}</view>
+                <view class='present_money'>目前互助金</view>
+            </view>
+            <view class='targetAndPrice'>
+                <view class='target'>
+                    <view class='target_money'>￥{{money}}</view>
+                    <view class='target_tip'>互助目标</view>
+                </view>
+                <view class='target copies'>
+                    <view class='copies_money'><view class='icon_add' catchtap='add'></view><text>{{num}}</text><view class='icon_incer' catchtap='incer'></view></view>
+                    <view class='copies_tip'>份数</view>
+                </view>
+                <view class='target price dream'>
+                    <view class='dream'>{{dream}}<view class='icon_select'></view></view>
+                    <view class='dream_tip'>选择梦想</view>
+                </view>
+            </view>
+            <view class='price'>{{price}}/份 结算：<text>{{num*price}}元</text></view>
+            <button class='join_help wxPay' catchtap='wxPay'>微信支付</button>
+        </view>
+    </view>
+    <cover-view class='mask' wx:if="{{ishide}}">
+        <cover-view class='mask_bg'>
+            <cover-image class='icon_success' src='http://tdream.antit.top/image/stars.png'></cover-image>
+            <cover-view class='tip'>
+                您已成功参与20181227期小梦想互助
+            </cover-view>
+            <cover-view class='notice'>
+               您的编号为：2819281、81917917、7917917赶紧邀请小伙伴们一起来参加小梦想互助吧！
+            </cover-view>
+            <button>邀 请</button>
+        </cover-view>
+        <cover-image class='close' src='http://tdream.antit.top/image/close.png' bindtap='close'></cover-image>
+    </cover-view>
 </view>

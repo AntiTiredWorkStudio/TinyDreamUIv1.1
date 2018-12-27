@@ -131,4 +131,14 @@
             <view class='footer'></view>
         </view>
     </view>
+    <cover-view class='mask' catchtap='close' wx:if="{{close}}">
+        <cover-view class='bg'>
+            <cover-image class='img' src='http://tdream.antit.top/image/blankcrown.png'></cover-image>
+            <cover-view class='title'>幸运提示</cover-view>
+            <cover-view class='tip'>
+                恭喜您成为梦想互助XXXX期幸运者,请您在7个工作日内完善梦想并实名认证，通过审核后3个工作日内为您颁发梦想互助金!
+            </cover-view>
+            <button class='dream' catchtap='dream'>完善梦想</button>
+        </cover-view>
+    </cover-view>
 </view>

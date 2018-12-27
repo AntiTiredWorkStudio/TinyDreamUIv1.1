@@ -1,0 +1,78 @@
+<!--小梦想互助首页-->
+<!-- 
+    home:首页页面类名
+    home_content:首页主体内容
+    banner:首页banner图
+    participate_tip:参与互助提示信息
+    tip_main:参与互助提示信息主体
+    tip_left:参与互助提示信息左边部分
+    username:展示用户名
+    tip_right:参与互助提示信息右边部分
+    dream_info:梦想互助池
+    dream_title:梦想池标题（期数）
+    progress:互助进度
+    money:互助资金（已经筹集到的资金）
+    circle:环形进度条
+    timeout:倒计时
+    icon_clock:钟表图标
+    timeout_ui:倒计时文本展示
+    help_money:互助资金展示
+    present_money:目前互助金提示信息
+    targetAndPrice:目标资金以及单价文字展示
+    target_money:互助目标金额（总金额）
+    target_tip:互助目标金额的提示文字
+    price:单价
+    price_tip:单价提示文字
+    price_money:单价（一份的钱数）
+    join_help:参与互助的按钮
+    tip_msg:参与互助说明
+    issue:往期幸运者（按钮）
+    rules:互助规则
+    rules_title:规则标题
+    steps:规则步骤
+    rules_info:规则详情
+ -->
+<view class='home'>
+    <view class='home_content'>
+        <view class='end'>
+            <view class='title'>梦想池20181227期(已结束）</view>
+            <view class='dream_info'>
+                <view class='box_info'>
+                    <view class='left'>
+                        <view class='money'>互助完成金额</view>
+                        <view class='money_txt'>￥20,000</view>
+                        <view class='lucky'>
+                            中奖幸运者编号： 
+                            <text>10000002-10000012</text>
+                        </view>
+                        <view class='endTime'>结束时间20181222 18:26</view>
+                    </view>
+                    <view class='right'>
+                        <view class='price'>价格 5元/份</view>
+                        <view class='look_info'>中奖计算步骤></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class='tab'>
+            <view class='left active'>我的编号</view>
+            <view class='right'>用户编号 </view>
+        </view>
+    </view>
+    <view class='tabBox'>
+        <view class='tabList'>
+            <view class='number'>20181205-10000001</view>
+            <view class='number'>20181205-10000001</view>
+            <view class='number'>20181205-10000001</view>
+            <view class='number'>20181205-10000001</view>
+        </view>
+    </view>
+    <view class='user_number'>
+        <view class='user'>
+            <view class='phone'>185****2235</view>
+            <view class='num'>1 份</view>
+            <view class='look' style='color:#00d094'>查看编号</view>
+            <view class='title'>开一家餐厅</view>
+        </view>
+    </view>
+</view>

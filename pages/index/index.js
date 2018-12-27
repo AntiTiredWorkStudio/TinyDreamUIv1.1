@@ -9,7 +9,8 @@ Page({
       price:5,
       remaining:20,
       obtainMoney:'80',
-      jindu:''
+      jindu:'',
+      close:false
   },
   //绘制进度条
   drawCircle(jindu){
@@ -51,10 +52,19 @@ Page({
     })
   },
 
-
+  dream(){
+      wx.navigateTo({
+          url: '/pages/add/add',
+      })
+  },
   lucky: function () {
       wx.navigateTo({
           url: '/pages/lucky/lucky',
+      })
+  },
+  close(){
+      this.setData({
+          close:false
       })
   },
   rules: function () {
@@ -64,6 +74,11 @@ Page({
   },
   onLoad: function () {
     this.update();
+    setTimeout(function(){
+        this.setData({
+            close:true
+        })
+    }.bind(this),1000)
   },
   update: function () {
       this.setData({
