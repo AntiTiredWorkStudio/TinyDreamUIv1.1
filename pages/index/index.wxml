@@ -131,6 +131,12 @@
             <view class='footer'></view>
         </view>
     </view>
+    <view class='icon_notice {{hide == true ? "hide" : ""}}'>
+        <view class='left' bindtap='coach'></view>
+        <view class='right' bindtap='notice'>
+            <view class='text'>{{message}}</view>
+        </view>
+    </view>
     <cover-view class='mask' catchtap='close' wx:if="{{close}}">
         <cover-view class='bg'>
             <cover-image class='img' src='http://tdream.antit.top/image/blankcrown.png'></cover-image>

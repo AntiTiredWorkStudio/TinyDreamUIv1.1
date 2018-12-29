@@ -10,7 +10,9 @@ Page({
       remaining:20,
       obtainMoney:'80',
       jindu:'',
-      close:false
+      close:false,
+      message:'0',
+      hide:true,
   },
   //绘制进度条
   drawCircle(jindu){
@@ -62,6 +64,19 @@ Page({
           url: '/pages/lucky/lucky',
       })
   },
+//  客服
+  coach: function () {
+      this.setData({
+          message:'1',
+          hide:!this.data.hide
+      })
+  },
+//   消息
+  notice: function () {
+      wx.navigateTo({
+          url: '/pages/notice/notice',
+      })
+  },
   close(){
       this.setData({
           close:false
@@ -79,6 +94,15 @@ Page({
             close:true
         })
     }.bind(this),1000)
+      if (this.data.message != 0){
+          this.setData({
+              hide:false
+          })
+      }else{
+          this.setData({
+              hide: true
+          })
+      }
   },
   update: function () {
       this.setData({

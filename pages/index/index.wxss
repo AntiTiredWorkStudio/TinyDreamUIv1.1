@@ -368,3 +368,51 @@ button::after{
     left: 175rpx;
     border-radius: 44rpx;
 }
+/* 系统通知图标处理 */
+.icon_notice{
+    width:220rpx;
+    height: 68rpx;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    right: 0;
+    top: 160rpx;
+    border-top-left-radius: 34rpx;
+    border-bottom-left-radius: 34rpx;
+    transform: translate(0,0);
+    transition: 1s linear;
+}
+.icon_notice.hide{
+    transform: translate(110rpx,0);
+}
+.icon_notice .left{
+    width: 44rpx;
+    height: 50rpx;
+    background: url(http://tdream.antit.top/image/secretary.png) no-repeat;
+    float: left;
+    margin-left: 32rpx;
+    margin-top: 8rpx;
+    background-size: 44rpx 50rpx;
+}
+.icon_notice .right{
+    float: right;
+    margin-right: 32rpx;
+    background: url(http://tdream.antit.top/image/dialog.png) no-repeat;
+    width: 46rpx;
+    height: 42rpx;
+    margin-top: 13rpx;
+    position: relative;
+    background-size: 46rpx 42rpx;
+}
+.icon_notice .right .text{
+    width: 18rpx;
+    height: 18rpx;
+    background: red;
+    border-radius: 50%;
+    font-size: 16rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 18rpx;
+    position: absolute;
+    right: -10rpx;
+    top: -3rpx;
+}
