@@ -1,0 +1,13 @@
+<!-- 计算公式详情页面 -->
+<view class='calc'>
+    <view class='title'>本期中奖计算步骤:</view>
+    <view class='main'>
+        <view>[(2018137+305111520+100001)/ 1000]取余数 +10000000</view>
+        <view>=(307229658 / 1000)  取余数 +10000000</view>
+        <view>=658+10000000（658为余数）</view>
+        <view>=10000658</view>
+        <view class='steps'>
+        <view>得出幸运者编号为：10000658</view>
+        </view>
+    </view>
+</view>
