@@ -370,7 +370,7 @@ button::after{
 }
 /* 系统通知图标处理 */
 .icon_notice{
-    width:220rpx;
+    width:185rpx;
     height: 68rpx;
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
