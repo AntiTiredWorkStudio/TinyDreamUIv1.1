@@ -117,6 +117,7 @@ page{
     height: 542rpx;
     background: #fff;
     border-radius: 20rpx;
+    position: relative;
 }
 .user .plate .module .block{
     width: 229rpx;
@@ -131,6 +132,11 @@ page{
 }
 .user .plate .module .block.bottom{
     border-bottom: none;
+}
+.user .plate .module .block.bottom.psa{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .user .plate .module .block .block_main{
     width: 100%;
@@ -153,9 +159,9 @@ page{
 }
 .user .plate .module .block .block_main .icon_service{
     margin-top: 28rpx;
-    height: 68rpx;
+    height: 66rpx;
     background: url(http://tdream.antit.top/image/server.png) no-repeat center center;
-    background-size: 70rpx 68rpx;
+    background-size: 68rpx 66rpx;
 }
 .user .plate .module .block .block_main .icon_phone{
     height: 66rpx;
@@ -163,9 +169,9 @@ page{
     background-size: 48rpx 66rpx;
 }
 .user .plate .module .block .block_main .icon_name{
-    height: 64rpx;
+    height: 66rpx;
     background: url(http://tdream.antit.top/image/identify.png) no-repeat center center;
-    background-size: 83rpx 64rpx;
+    background-size: 86rpx 66rpx;
 }
 .user .plate .module .block .block_main .icon_notice{
     height: 66rpx;
@@ -173,18 +179,17 @@ page{
     background-size: 66rpx 66rpx;
 }
 .user .plate .module .block .block_main .icon_cach{
-    padding-bottom: 6rpx;
-    height: 61rpx;
+    height: 66rpx;
     background: url(http://tdream.antit.top/image/contact.png) no-repeat center center;
-    background-size: 61rpx 61rpx;
+    background-size: 66rpx 66rpx;
 }
 .user .plate .module .block .block_main .icon_feed{
-    height: 62rpx;
+    height: 66rpx;
     background: url(http://tdream.antit.top/image/suggest.png) no-repeat center center;
-    background-size: 62rpx 62rpx;
+    background-size: 66rpx 66rpx;
 }
 .user .plate .module .block .block_main .icon_question{
-    height: 63rpx;
+    height: 66rpx;
     background: url(http://tdream.antit.top/image/question.png) no-repeat center center;
-    background-size: 63rpx 63rpx;
+    background-size: 66rpx 66rpx;
 }

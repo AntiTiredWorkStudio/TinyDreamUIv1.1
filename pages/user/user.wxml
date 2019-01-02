@@ -61,12 +61,12 @@
                     <text>实名认证</text>
                 </view>
             </view>
-            <view class='block'>
+            <!-- <view class='block'>
                 <view class='block_main' bindtap='server'>
                     <view class='icon_service icon'></view>
                     <text>梦想服务</text>
                 </view>
-            </view>
+            </view> -->
             <view class='block line'>
                 <view class='block_main'>
                     <view class='icon_cach icon'></view>
@@ -79,7 +79,7 @@
                     <text>用户反馈</text>
                 </view>
             </view>
-            <view class='block bottom'>
+            <view class='block bottom psa'>
                 <view class='block_main' bindtap='question'>
                     <view class='icon_question icon'></view>
                     <text>常见问题</text>
