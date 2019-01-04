@@ -1,0 +1,56 @@
+/* 申请帮助样式表 */
+page{
+    background-color: #f0f0f0;
+}
+.application{
+    border-top: 2rpx solid #ddd;
+}
+.application .start{
+    height: 78rpx;
+    line-height: 78rpx;
+}
+.application .title{
+    margin-left: 30rpx;
+    font-size: 30rpx;
+}
+.application .main{
+    background-color: #fff;
+    min-height: 720rpx;
+}
+.application .main .description{
+    width: 690rpx;
+    margin: 0 auto;
+    border-bottom: 2rpx solid #eee;
+    height: 285rpx;
+    margin-bottom: 20rpx;
+}
+.application .main .description textarea{
+    width: 100%;
+    height: 245rpx;
+    padding: 20rpx 0;
+    font-size: 28rpx;
+    color: #ccc;
+}
+.application .main .keyword{
+    height: 214rpx;
+}
+.application .main .keyword textarea{
+    height: 174rpx;
+    padding: 20rpx 0;
+}
+.application .main .border{
+    border: none;
+}
+.application button::after{
+    border: none;
+}
+.application button{
+    width: 320rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-radius: 44rpx;
+    margin: 120rpx auto 0;
+    text-align: center;
+    color: #fff;
+    background-color: #00d094;
+}

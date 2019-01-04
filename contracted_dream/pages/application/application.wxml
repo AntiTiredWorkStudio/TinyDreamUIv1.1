@@ -1,0 +1,18 @@
+<!-- 申请帮助页面 -->
+<view class='application'>
+    <view class='title start'>我的梦想进展执行描述（140字以内）</view>
+    <view class='main'>
+        <view class='description'>
+            <textarea placeholder="请输入您的梦想执行描述" maxlength="140"></textarea>
+        </view>
+        <view class='title'>遇到关键困难描述（30字以内）</view>
+        <view class='keyword description border'>
+            <textarea placeholder='请输入您遇到的关键困难' maxlength='30'></textarea>
+        </view>
+        <view class='title'>希望平台提供帮助简述（30字以内）</view>
+        <view class='keyword description'>
+            <textarea placeholder='请简述希望平台提供的帮助' maxlength='30'></textarea>
+        </view>
+    </view>
+    <button>提交申请</button>
+</view>

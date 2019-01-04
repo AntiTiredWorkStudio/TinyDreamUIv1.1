@@ -1,0 +1,144 @@
+/* 小梦想互助样式表 */
+.help{
+    border-top: 2rpx solid #ddd;
+}
+.help .main{
+    width: 690rpx;
+    margin: 0 auto 0;
+}
+.help .main .titleBox{
+    margin-top: 40rpx;
+}
+.help .main .title{
+    font-size: 32rpx;
+}
+.help .main .titleBox .tip{
+    font-size: 24rpx;
+    color: #999;
+    display: inline-block;
+    margin-bottom: 20rpx;
+}
+.help .main .titleBox .dream_input{
+    width: 100%;
+    height: 88rpx;
+    border-radius: 10rpx;
+    box-shadow: 2rpx 0rpx 10rpx 2rpx rgba(0, 54, 208, .1),-2rpx 0 10rpx 2rpx rgba(0, 54, 208, .1),0 2rpx 10rpx 2rpx rgba(0, 54, 208, .1),0 -2rpx 10rpx 2rpx rgba(0, 54, 208, .1);
+    line-height: 88rpx;
+}
+.help .main .titleBox .dream_input input{
+    font-size: 28rpx;
+    padding-left: 20rpx;
+    width: 670rpx;
+    height: 100%;
+}
+.help .main .titleBox .dream_input.info{
+    margin-top: 20rpx;
+    height: 260rpx;
+    font-size: 28rpx;
+}
+.help .main .titleBox .dream_input.info textarea{
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx; 
+    width: 650rpx;
+    height: 220rpx;
+    line-height: normal;
+    text-align: left;
+}
+.help .main .list{
+    margin-top: 60rpx;
+    margin-bottom: 40rpx;
+}
+.help .main .list .title{
+    font-size: 32rpx;
+}
+.help .main .list .listbox{
+     margin-top: 20rpx;
+     width: 100%;
+     height: 185rpx;
+     border-radius: 10rpx;
+     box-shadow: 2rpx 0rpx 10rpx 2rpx rgba(0, 54, 208, .1),-2rpx 0 10rpx 2rpx rgba(0, 54, 208, .1),0 2rpx 10rpx 2rpx rgba(0, 54, 208, .1),0 -2rpx 10rpx 2rpx rgba(0, 54, 208, .1);
+}
+.help .main .list .listbox .bg{
+    float: left;
+    width: 220rpx;
+    height: 185rpx;
+    /* background-color: red;  */
+    margin-right: 30rpx;
+    background-size: 220rpx 185rpx;
+    background-repeat: no-repeat;
+}
+.help .main .list .listbox .bg.bg1{
+    background-image: url(http://tdream.antit.top/image/demo_step01.jpg)
+}
+.help .main .list .listbox .bg.bg2{
+    background-image: url(http://tdream.antit.top/image/demo_step02.jpg)
+}
+.help .main .list .listbox .bg.bg3{
+    background-image: url(http://tdream.antit.top/image/demo_step03.jpg)
+}
+.help .main .list .listbox .center{
+    float: left;
+    width: 280rpx;
+    margin-top: 40rpx;
+}
+.help .main .list .listbox .center .title{
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+}
+.help .main .list .listbox .center .eg{
+    font-size: 22rpx;
+    color: #999;
+}
+.help .main .list .listbox .select{
+    float: right;
+    margin-top: 72rpx;
+    margin-right: 30rpx;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    border: 2rpx solid #d8d8d8;
+}
+.help .main .list .listbox .select.active{
+    background: url(http://tdream.antit.top/image/demo_correct.jpg) no-repeat center center;
+    background-size: 40rpx 40rpx;
+}
+.help .main .info{
+    text-align: right;
+    width: 100%;
+    float: right;
+    font-size: 26rpx;
+    color: #a1a1a1;
+    text-decoration: underline;
+    margin-bottom: 60rpx;
+}
+.help .main .right{
+    float: right;
+    padding-bottom: 68rpx;
+    line-height: 74rpx;
+}
+.help .main .right .price{
+    float: right;
+    font-size: 40rpx;
+    color: #ffc057;
+    margin-right: 20rpx;
+    vertical-align: middle;
+}
+.help .main .right .price text{
+    color: #999;
+    font-size: 26rpx;
+}
+button::after{
+    border:none;
+}
+button{
+    width: 220rpx;
+    height: 68rpx;
+    border-radius: 34rpx;
+    background-color: #00d094;
+    line-height: 68rpx;
+    font-size: 40rpx;
+    color: #fff;
+    float: right;
+}

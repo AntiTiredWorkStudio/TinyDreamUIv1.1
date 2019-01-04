@@ -1,0 +1,114 @@
+/* 我的--样式表 */
+page{
+    background: #f0f0f0;
+}
+.user{
+    border-top: 2rpx solid #ddd;
+}
+.user .main{
+    width: 690rpx;
+    margin: 0 auto;
+}
+.user .main .dream_info{
+    width: 100%;
+    height: 220rpx;
+    margin-top: 40rpx;
+    background: #fff;
+    border-radius: 10rpx;
+}
+.user .main .dream_info .bg{
+    width: 260rpx;
+    height: 220rpx;
+    background: url(http://tdream.antit.top/image/demo_info.png) no-repeat;
+    background-size: 260rpx 220rpx;
+    float: left;
+    margin-right: 30rpx;
+}
+.user .main .dream_info .info{
+    font-size: 30rpx;
+    width: 368rpx;
+    float: left;
+}
+.user .main .dream_info .info .title{
+    padding-top: 40rpx;
+    padding-bottom: 20rpx;
+    border-bottom: 2rpx solid #f0f0f0;
+    margin: 0;
+}
+.user .main .dream_info .info .dream_title{
+    margin-top: 20rpx;
+    font-size: 28rpx;
+    color: #808080;
+}
+.user .main .title{
+    margin-top: 50rpx;
+    margin-bottom: 15rpx;
+}
+.user .main .title .line{
+    width: 6rpx;
+    height: 34rpx;
+    background: #00d094;
+    display: inline-block;
+    margin-right: 20rpx;
+    vertical-align: middle;
+}
+.user .main .title .text{
+    font-size: 28rpx;
+    display: inline-block;
+}
+.user .bg{
+    background: #fff;
+    height: 86rpx;
+    line-height: 86rpx;
+    font-size: 28rpx;
+    color: #333;
+    margin-bottom: 20rpx;
+}
+.user .bg .user_main{
+    width: 690rpx;
+    margin: 0 auto;
+}
+.user .bg .user_main .icon{
+    float: left;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+    vertical-align: middle;
+}
+.user .bg .user_main .icon_order{
+    width: 38rpx;
+    height: 46rpx;
+    background: url(http://tdream.antit.top/image/demo_note.png) no-repeat;
+    background-size: 38rpx 46rpx;
+}
+.user .bg .user_main .icon_feedback{
+    width: 38rpx;
+    height: 38rpx;
+    margin-top: 24rpx;
+    background: url(http://tdream.antit.top/image/demo_edit.png) no-repeat;
+    background-size: 38rpx 38rpx;
+}
+.user .bg .user_main .icon_coach{
+    width: 38rpx;
+    height: 38rpx;
+    margin-top: 24rpx;
+    background: url(http://tdream.antit.top/image/demo_sounds.png) no-repeat;
+    background-size: 38rpx 38rpx;
+}
+.user .bg .user_main .icon_help{
+    width: 38rpx;
+    height: 42rpx;
+    margin-top: 22rpx;
+    background: url(http://tdream.antit.top/image/demo_pen.png) no-repeat;
+    background-size: 38rpx 42rpx;
+}
+.user .bg .user_main .text{
+    float: left;
+}
+.user .bg .user_main .icon_right{
+    float: right;
+    width: 26rpx;
+    height: 36rpx;  
+    background: url(http://tdream.antit.top/image/demo_arrow.png) no-repeat;
+    background-size: 26rpx 36rpx;
+    margin-top: 25rpx;
+}

@@ -1,0 +1,53 @@
+<!-- 小梦想互助页面 -->
+<view class='help'>
+    <view class='main'>
+        <view class='titleBox'>
+            <view class='title'>梦想标题（20字以内）</view>
+            <text class='tip'>梦想类型：创业/健身/学习</text>
+            <view class='dream_input'>
+                <input placeholder='请输入您的梦想标题' maxlength='20'></input>
+            </view>
+        </view>
+        <view class='titleBox'>
+            <view class='title'>梦想简介（140字以内）</view>
+            <view class='dream_input info'>
+                <textarea placeholder='请输入您的梦想简介'></textarea>
+            </view>
+        </view>
+        <view class='list'>
+            <view class='title'>平台提供梦想规划服务（可多选）</view>
+            <view class='listbox'>
+                <view class='bg bg1'></view>
+                <view class='center'>
+                    <view class='title'>梦想/创业相关电子书籍资料一本</view>
+                    <view class='eg'>举例：《创业36军规》</view>
+                </view>
+                <view class='select'></view>
+            </view>
+            <view class='listbox'>
+                <view class='bg bg2'></view>
+                <view class='center'>
+                    <view class='title'>知名创业导师咨询指导1次</view>
+                    <view class='eg'>电话或视频90分钟</view>
+                </view>
+                <view class='select active'></view>
+            </view>
+            <view class='listbox'>
+                <view class='bg bg3'></view>
+                <view class='center'>
+                    <view class='title'>平台相关报道1次梦想执行情况</view>
+                    <view class='eg'>采访+报道</view>
+                </view>
+                <view class='select'></view>
+            </view>
+        </view>
+        <!-- <view class='info'>查看详情</view> -->
+        <view class='right'>
+            <button>付款</button>
+            <view class='price'>
+                <text>套餐价格：</text>
+                ￥128
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,33 @@
+{
+    "pages": [
+        "pages/help/help",
+        "pages/user/user",
+        "pages/application/application",
+        "pages/order/order",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#00d094",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/help/help",
+                "text": "小梦想",
+                "iconPath": "img/dream.png",
+                "selectedIconPath": "img/dream-active.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我的",
+                "iconPath": "img/user.png",
+                "selectedIconPath": "img/user-active.png"
+            }
+        ]
+    }
+}
