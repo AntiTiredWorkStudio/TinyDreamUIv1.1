@@ -19,7 +19,8 @@ Page({
         // 显示那一栏（标记）
         dream:'1',
         // 添加梦想的按钮是否显示
-        status:1
+        status:1,
+        close:false
     },
     // 点击切换事件
     toggle: function (e) {
@@ -43,6 +44,11 @@ Page({
             url: '/pages/add/add',
         })
     },
+    close: function(){
+        this.setData({
+            close:false
+        })
+    },
     // 跳转到dream详情
     lucky: function(){
         wx.navigateTo({
@@ -54,7 +60,11 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        setTimeout(function () {
+            this.setData({
+                close: true
+            })
+        }.bind(this), 1000)
     },
 
     /**

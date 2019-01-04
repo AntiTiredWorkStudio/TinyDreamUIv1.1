@@ -48,4 +48,5 @@
         </view>
     </view>
     <view class='add' bindtap='add' style='display:{{status == 1 ? "block" : "none"}}'></view>
+    <mask bindtap="close" wx:if="{{close}}"></mask>
 </view>

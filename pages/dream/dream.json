@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "小梦想"
+    "usingComponents": {
+      "mask": "/pages/components/mask"
+    },
+    "navigationBarTitleText": "小梦想"
 }

@@ -316,57 +316,13 @@
     background-color: #fff;
 }
 /* 遮罩 */
-.mask{
-    background: rgba(0, 0, 0, .5);
+mask{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 9;
-}
-.mask .bg{
-    width: 659rpx;
-    height: 718rpx;
-    position: absolute;
-    left: 6rpx;
-    transform: translateY(-50%);
-    top: 50%;
-}
-.mask .bg .title{
-    width: 100%;
-    position: absolute;
-    top: 158rpx;
-    left: 260rpx;
-    font-size: 56rpx;
-    color: #ffc057;
-}
-.mask .bg .tip{
-    position: absolute;
-    top: 260rpx;
-    width: 500rpx;
-    white-space: normal;
-    font-size: 32rpx;
-    color: #808080;
-    left: 124rpx;
-    text-align: center;
-    text-indent: 2em;
-    line-height: 50rpx;
-}
-button::after{
-    border: none;
-}
-.mask .bg button{
-    background-color: #00d094;
-    color: #fff;
-    text-align: center;
-    font-size: 38rpx;
-    width: 400rpx;
-    height: 88rpx;
-    line-height: 88rpx;
-    position: absolute;
-    bottom: 62rpx;
-    left: 175rpx;
-    border-radius: 44rpx;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
 }
 /* 系统通知图标处理 */
 .icon_notice{

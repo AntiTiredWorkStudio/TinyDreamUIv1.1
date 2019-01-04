@@ -53,10 +53,9 @@ Page({
         url: '/pages/payInfo/payInfo',
     })
   },
-
-  dream(){
-      wx.navigateTo({
-          url: '/pages/add/add',
+  close: function () {
+      this.setData({
+          close:false
       })
   },
   lucky: function () {
@@ -75,11 +74,6 @@ Page({
   notice: function () {
       wx.navigateTo({
           url: '/pages/notice/notice',
-      })
-  },
-  close(){
-      this.setData({
-          close:false
       })
   },
   rules: function () {
