@@ -1,7 +1,11 @@
 {
     "pages": [
-        "pages/end/end",
+      "pages/demo_user/demo_user",
+      "pages/demo_order/demo_order",
+      "pages/demo_application/demo_application",
+      "pages/demo_help/demo_help",
         "pages/index/index",
+        "pages/end/end",
         "pages/helpInfo/helpInfo",
         "pages/payInfo/payInfo",
         "pages/add/add",

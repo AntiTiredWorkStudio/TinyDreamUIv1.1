@@ -1,0 +1,87 @@
+/* 订单样式表 */
+.order{
+    border-top: 2rpx solid #ddd;
+}
+.order .list{
+    width: 690rpx;
+    margin: 30rpx auto 0;
+}
+.order .list .order_list{
+    width: 100%;
+    height: 260rpx;
+    border-radius: 10rpx;
+    box-shadow: 2rpx 0rpx 10rpx 2rpx rgba(149,149,149,.35),-2rpx 0 10rpx 2rpx rgba(149,149,149,.35),0 2rpx 10rpx 2rpx rgba(149,149,149,.35),0 -2rpx 10rpx 2rpx rgba(149,149,149,.35);
+    margin-bottom: 30rpx;
+}
+.order .list .order_list .title{
+    background-color: #00d094;
+    height: 88rpx;
+    color: #fff;
+    font-size: 32rpx;
+    line-height: 88rpx;
+}
+.order .list .order_list .title view{
+    margin-left: 30rpx;
+}
+.order .list .order_list .money{
+    float: left;
+    margin-top: 38rpx;
+    margin-left: 30rpx;
+}
+.order .list .order_list .money text{
+    font-size: 34rpx;
+    color: #999;
+}
+.order .list .order_list .money text.num{
+    color: #00d094;
+    font-size: 72rpx;
+}
+.order .list .order_list .info{
+    float: right;
+    margin-top: 40rpx;
+    margin-right: 30rpx;
+}
+.order .list .order_list .info .time,.status{
+    margin-bottom:10rpx;
+    font-size: 26rpx;
+    color: #999;
+}
+.order .list .order_list .info .time .timeNum,.state{
+    color: #333;
+}
+
+.order .list .pay .title{
+    background-color: #ffc057;
+}
+.order .list .pay .left{
+    float: left;
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+}
+.order .list .pay .left{
+    font-size: 26rpx;
+    color: #999;
+    margin: 30rpx 30rpx 0;
+}
+.order .list .pay .left view{
+    margin-bottom: 10rpx; 
+}
+.order .list .pay .left view text.col{
+    color: #333;
+}
+button::after{
+    border: none;
+}
+button{
+    float: right;
+    margin-right: 30rpx;
+    margin-top: 86rpx;
+    width: 180rpx;
+    border-radius: 27rpx;
+    height: 54rpx;
+    background-color: #ffc057;
+    color: #fff;
+    box-shadow: 2rpx 0rpx 10rpx 2rpx rgba(255,192,87,.35),-2rpx 0 10rpx 2rpx rgba(255,192,87,.35),0 2rpx 10rpx 2rpx rgba(255,192,87,.35),0 -2rpx 10rpx 2rpx rgba(255,192,87,.35);
+    line-height: 54rpx;
+    font-size: 24rpx;
+}

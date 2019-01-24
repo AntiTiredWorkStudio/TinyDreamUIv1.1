@@ -1,0 +1,48 @@
+<!-- 订单页面 -->
+<view class='order'>
+    <view class='list'>
+        <view class='order_list'>
+            <view class='title'>
+                <view>梦想服务01</view>
+            </view>
+            <view class='main'>
+                <view class='money'>
+                    <text>￥</text>
+                    <text class='num'>128</text>
+                </view>
+                <view class='info'>
+                    <view class='time'>
+                        <text>支付时间：</text>
+                        <text class='timeNum'>2018.10.12</text>
+                    </view>
+                    <view class='status'>
+                        <text>订单状态：</text>
+                        <text class='state'>已支付</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class='order_list pay'>
+            <view class='title'>
+                <view>梦想服务02</view>
+            </view>
+            <view class='main'>
+                <view class='left'>
+                    <view class='time'>
+                        <text>下单时间：</text>
+                        <text class='timeNum col'>2019.01.03</text>
+                    </view>
+                    <view class='price'>
+                        <text>支付金额：</text>
+                        <text class='price_num col'>10元</text>
+                    </view>
+                    <view class='status'>
+                        <text>订单状态：</text>
+                        <text class='state col'>待支付</text>
+                    </view>
+                </view>
+                <button>立即支付</button>
+            </view>
+        </view>
+    </view>
+</view>
